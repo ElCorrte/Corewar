@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   asm.h                                              :+:      :+:    :+:   */
+/*   kz_secondary_functions.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/15 13:14:08 by kzakharc          #+#    #+#             */
-/*   Updated: 2017/08/15 13:14:11 by kzakharc         ###   ########.fr       */
+/*   Created: 2017/08/15 18:24:43 by kzakharc          #+#    #+#             */
+/*   Updated: 2017/08/15 18:24:44 by kzakharc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ASM_H
-#define ASM_H
+#include "../includes/asm.h"
 
-# include "../Lib/src/libft/libft.h"
-# include "../Lib/src/ft_printf/ft_printf.h"
-# include "../Lib/src/get_next_line/get_next_line.h"
-
-typedef struct		s_asm
+void	lets_get_null(void)
 {
-	int 			a;
-}					t_asm;
-
-t_asm				g_asm;
-
-void				print_usage(int i);
-void				check_and_read(char *str);
-void				lets_get_null(void);
-
-#endif
+	g_asm.a = 0;
+}

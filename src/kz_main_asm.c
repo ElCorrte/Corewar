@@ -16,15 +16,14 @@ int 	main(int argc, char **argv)
 {
 	int 	i;
 
-	i = 1;
+	i = 0;
+	lets_get_null();
 	(argc == 1) ? print_usage(0) : 0;
 	if (argc > 1)
 	{
-		while (i <= (argc - 1))
-		{
+		while (++i <= (argc - 1))
 			check_and_read(argv[i]);
-			i++;
-		}
 	}
+	(g_asm.a == 1) ? ft_printf("жопка попка") : 0;
 	return (0);
 }
