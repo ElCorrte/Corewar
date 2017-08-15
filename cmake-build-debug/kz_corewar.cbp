@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="kz_corewar"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kz_corewar">
+				<Option output="/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/kz_corewar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 kz_corewar"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kz_corewar/fast">
+				<Option output="/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/kz_corewar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 kz_corewar/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/all_for_flags.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/bonus.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/else.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/for_bc.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/for_bs.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/for_print.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/ft_it_base.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/ft_printf.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/ft_printf.h">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/tp_f.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/tp_s.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/ft_printf/wid_prec.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/get_next_line/get_next_line.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/get_next_line/get_next_line.h">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_atoi.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_bzero.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_cntwords.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_countdigits.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_isalnum.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_isalpha.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_isascii.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_isdigit.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_isprint.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_isspace.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_isspace_s.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_itoa.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_lstadd.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_lstdel.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_lstdelone.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_lstiter.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_lstmap.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_lstnew.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_memalloc.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_memccpy.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_memchr.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_memcmp.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_memcpy.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_memdel.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_memmove.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_memset.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_putchar.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_putchar_fd.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_putendl.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_putendl_fd.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_putnbr.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_putnbr_fd.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_putstr.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_putstr_fd.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strcat.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strchr.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strclr.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strcmp.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strcpy.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strdel.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strdup.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strequ.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_striter.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_striteri.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strjoin.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strlcat.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strlen.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strmap.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strmapi.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strncat.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strncmp.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strncpy.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strnequ.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strnew.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strnstr.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strrchr.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strsplit.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strstr.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strsub.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_strtrim.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_tolower.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_toupper.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/includes/asm.h">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/main_asm.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/print_for_validation.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
