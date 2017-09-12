@@ -234,15 +234,27 @@ CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_tolower.c.o: ../Lib/src/libft/libft.h
 CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_toupper.c.o: ../Lib/src/libft/ft_toupper.c
 CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_toupper.c.o: ../Lib/src/libft/libft.h
 
-CMakeFiles/kz_corewar.dir/src/main_asm.c.o: ../Lib/src/ft_printf/ft_printf.h
-CMakeFiles/kz_corewar.dir/src/main_asm.c.o: ../Lib/src/get_next_line/get_next_line.h
-CMakeFiles/kz_corewar.dir/src/main_asm.c.o: ../Lib/src/libft/libft.h
-CMakeFiles/kz_corewar.dir/src/main_asm.c.o: ../includes/asm.h
-CMakeFiles/kz_corewar.dir/src/main_asm.c.o: ../src/main_asm.c
+CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o: ../Lib/src/ft_printf/ft_printf.h
+CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o: ../Lib/src/get_next_line/get_next_line.h
+CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o: ../Lib/src/libft/libft.h
+CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o: ../includes/asm.h
+CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o: ../src/kz_main_asm.c
 
-CMakeFiles/kz_corewar.dir/src/print_for_validation.c.o: ../Lib/src/ft_printf/ft_printf.h
-CMakeFiles/kz_corewar.dir/src/print_for_validation.c.o: ../Lib/src/get_next_line/get_next_line.h
-CMakeFiles/kz_corewar.dir/src/print_for_validation.c.o: ../Lib/src/libft/libft.h
-CMakeFiles/kz_corewar.dir/src/print_for_validation.c.o: ../includes/asm.h
-CMakeFiles/kz_corewar.dir/src/print_for_validation.c.o: ../src/print_for_validation.c
+CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.o: ../Lib/src/ft_printf/ft_printf.h
+CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.o: ../Lib/src/get_next_line/get_next_line.h
+CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.o: ../Lib/src/libft/libft.h
+CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.o: ../includes/asm.h
+CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.o: ../src/kz_print_for_validation.c
+
+CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.o: ../Lib/src/ft_printf/ft_printf.h
+CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.o: ../Lib/src/get_next_line/get_next_line.h
+CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.o: ../Lib/src/libft/libft.h
+CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.o: ../includes/asm.h
+CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.o: ../src/kz_secondary_functions.c
+
+CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o: ../Lib/src/ft_printf/ft_printf.h
+CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o: ../Lib/src/get_next_line/get_next_line.h
+CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o: ../Lib/src/libft/libft.h
+CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o: ../includes/asm.h
+CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o: ../src/kz_validation_1.c
 

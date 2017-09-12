@@ -2121,59 +2121,113 @@ Lib/src/libft/ft_toupper.c.s:
 	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_toupper.c.s
 .PHONY : Lib/src/libft/ft_toupper.c.s
 
-src/main_asm.o: src/main_asm.c.o
+src/kz_main_asm.o: src/kz_main_asm.c.o
 
-.PHONY : src/main_asm.o
-
-# target to build an object file
-src/main_asm.c.o:
-	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/main_asm.c.o
-.PHONY : src/main_asm.c.o
-
-src/main_asm.i: src/main_asm.c.i
-
-.PHONY : src/main_asm.i
-
-# target to preprocess a source file
-src/main_asm.c.i:
-	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/main_asm.c.i
-.PHONY : src/main_asm.c.i
-
-src/main_asm.s: src/main_asm.c.s
-
-.PHONY : src/main_asm.s
-
-# target to generate assembly for a file
-src/main_asm.c.s:
-	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/main_asm.c.s
-.PHONY : src/main_asm.c.s
-
-src/print_for_validation.o: src/print_for_validation.c.o
-
-.PHONY : src/print_for_validation.o
+.PHONY : src/kz_main_asm.o
 
 # target to build an object file
-src/print_for_validation.c.o:
-	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/print_for_validation.c.o
-.PHONY : src/print_for_validation.c.o
+src/kz_main_asm.c.o:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o
+.PHONY : src/kz_main_asm.c.o
 
-src/print_for_validation.i: src/print_for_validation.c.i
+src/kz_main_asm.i: src/kz_main_asm.c.i
 
-.PHONY : src/print_for_validation.i
+.PHONY : src/kz_main_asm.i
 
 # target to preprocess a source file
-src/print_for_validation.c.i:
-	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/print_for_validation.c.i
-.PHONY : src/print_for_validation.c.i
+src/kz_main_asm.c.i:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.i
+.PHONY : src/kz_main_asm.c.i
 
-src/print_for_validation.s: src/print_for_validation.c.s
+src/kz_main_asm.s: src/kz_main_asm.c.s
 
-.PHONY : src/print_for_validation.s
+.PHONY : src/kz_main_asm.s
 
 # target to generate assembly for a file
-src/print_for_validation.c.s:
-	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/print_for_validation.c.s
-.PHONY : src/print_for_validation.c.s
+src/kz_main_asm.c.s:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.s
+.PHONY : src/kz_main_asm.c.s
+
+src/kz_print_for_validation.o: src/kz_print_for_validation.c.o
+
+.PHONY : src/kz_print_for_validation.o
+
+# target to build an object file
+src/kz_print_for_validation.c.o:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.o
+.PHONY : src/kz_print_for_validation.c.o
+
+src/kz_print_for_validation.i: src/kz_print_for_validation.c.i
+
+.PHONY : src/kz_print_for_validation.i
+
+# target to preprocess a source file
+src/kz_print_for_validation.c.i:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.i
+.PHONY : src/kz_print_for_validation.c.i
+
+src/kz_print_for_validation.s: src/kz_print_for_validation.c.s
+
+.PHONY : src/kz_print_for_validation.s
+
+# target to generate assembly for a file
+src/kz_print_for_validation.c.s:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.s
+.PHONY : src/kz_print_for_validation.c.s
+
+src/kz_secondary_functions.o: src/kz_secondary_functions.c.o
+
+.PHONY : src/kz_secondary_functions.o
+
+# target to build an object file
+src/kz_secondary_functions.c.o:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.o
+.PHONY : src/kz_secondary_functions.c.o
+
+src/kz_secondary_functions.i: src/kz_secondary_functions.c.i
+
+.PHONY : src/kz_secondary_functions.i
+
+# target to preprocess a source file
+src/kz_secondary_functions.c.i:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.i
+.PHONY : src/kz_secondary_functions.c.i
+
+src/kz_secondary_functions.s: src/kz_secondary_functions.c.s
+
+.PHONY : src/kz_secondary_functions.s
+
+# target to generate assembly for a file
+src/kz_secondary_functions.c.s:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.s
+.PHONY : src/kz_secondary_functions.c.s
+
+src/kz_validation_1.o: src/kz_validation_1.c.o
+
+.PHONY : src/kz_validation_1.o
+
+# target to build an object file
+src/kz_validation_1.c.o:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o
+.PHONY : src/kz_validation_1.c.o
+
+src/kz_validation_1.i: src/kz_validation_1.c.i
+
+.PHONY : src/kz_validation_1.i
+
+# target to preprocess a source file
+src/kz_validation_1.c.i:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.i
+.PHONY : src/kz_validation_1.c.i
+
+src/kz_validation_1.s: src/kz_validation_1.c.s
+
+.PHONY : src/kz_validation_1.s
+
+# target to generate assembly for a file
+src/kz_validation_1.c.s:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.s
+.PHONY : src/kz_validation_1.c.s
 
 # Help Target
 help:
@@ -2406,12 +2460,18 @@ help:
 	@echo "... Lib/src/libft/ft_toupper.o"
 	@echo "... Lib/src/libft/ft_toupper.i"
 	@echo "... Lib/src/libft/ft_toupper.s"
-	@echo "... src/main_asm.o"
-	@echo "... src/main_asm.i"
-	@echo "... src/main_asm.s"
-	@echo "... src/print_for_validation.o"
-	@echo "... src/print_for_validation.i"
-	@echo "... src/print_for_validation.s"
+	@echo "... src/kz_main_asm.o"
+	@echo "... src/kz_main_asm.i"
+	@echo "... src/kz_main_asm.s"
+	@echo "... src/kz_print_for_validation.o"
+	@echo "... src/kz_print_for_validation.i"
+	@echo "... src/kz_print_for_validation.s"
+	@echo "... src/kz_secondary_functions.o"
+	@echo "... src/kz_secondary_functions.i"
+	@echo "... src/kz_secondary_functions.s"
+	@echo "... src/kz_validation_1.o"
+	@echo "... src/kz_validation_1.i"
+	@echo "... src/kz_validation_1.s"
 .PHONY : help
 
 

@@ -12,10 +12,16 @@
 
 #include "../includes/asm.h"
 
-void	check_and_read(char *str)
+void	check_and_read(char *str, int i)
 {
-	(str[0] == '-' && str[1] == 'a' && str[2] == '\0') ? g_asm.a = 1 : 0;
-	if (g_asm.a == 1)
-		return;
 
+}
+
+int 	g_validation(char *str)
+{
+	if (!(str[0] == '-' && str[1] == 'a' && str[2] == '\0'))
+	{
+
+	}
+	return (0);
 }

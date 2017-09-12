@@ -24,8 +24,11 @@ typedef struct		s_asm
 
 t_asm				g_asm;
 
-void				print_usage(int i);
-void				check_and_read(char *str);
+void				print_usage(int i, char *str);
+void				check_and_read(char *str, int i);
 void				lets_get_null(void);
+int 				g_validation(char *str);
+void				print_with_a(char *str);
+void				creat_file(char *str);
 
 #endif

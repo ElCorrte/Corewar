@@ -18,12 +18,17 @@ int 	main(int argc, char **argv)
 
 	i = 0;
 	lets_get_null();
-	(argc == 1) ? print_usage(0) : 0;
+	(argc == 1) ? print_usage(0, "none") : 0;
+	if (argc > 1)
+		while (++i <= (argc - 1))
+			(argv[i][0] == '-' && argv[i][1] == 'a' && argv[i][2] == '\0') ?
+					g_asm.a = 1 : 0;
+	i = 0;
 	if (argc > 1)
 	{
 		while (++i <= (argc - 1))
-			check_and_read(argv[i]);
+			if (g_validation(argv[i]))
+				g_asm.a == 1 ? print_with_a(argv[i]) : creat_file(argv[i]);
 	}
-	(g_asm.a == 1) ? ft_printf("жопка попка") : 0;
 	return (0);
 }

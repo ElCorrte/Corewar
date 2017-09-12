@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/kz_corewar.dir/src/main_asm.c.o"
-  "CMakeFiles/kz_corewar.dir/src/print_for_validation.c.o"
+  "CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o"
+  "CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.o"
+  "CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.o"
+  "CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o"
   "CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/all_for_flags.c.o"
   "CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/bonus.c.o"
   "CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/else.c.o"

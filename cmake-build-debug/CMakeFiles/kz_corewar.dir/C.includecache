@@ -382,11 +382,19 @@ string.h
 ../Lib/src/get_next_line/get_next_line.h
 /nfs/2016/k/kzakharc/kz_corewar/Lib/src/get_next_line/get_next_line.h
 
-/nfs/2016/k/kzakharc/kz_corewar/src/main_asm.c
+/nfs/2016/k/kzakharc/kz_corewar/src/kz_main_asm.c
 ../includes/asm.h
 /nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
 
-/nfs/2016/k/kzakharc/kz_corewar/src/print_for_validation.c
+/nfs/2016/k/kzakharc/kz_corewar/src/kz_print_for_validation.c
+../includes/asm.h
+/nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
+
+/nfs/2016/k/kzakharc/kz_corewar/src/kz_secondary_functions.c
+../includes/asm.h
+/nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
+
+/nfs/2016/k/kzakharc/kz_corewar/src/kz_validation_1.c
 ../includes/asm.h
 /nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
 
