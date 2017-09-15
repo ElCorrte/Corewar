@@ -19,3 +19,5 @@ void	lets_get_null(void)
 	g_asm.fd = 0;
 	g_asm.c = 0;
 }
+
+void	print_all_this_shit(void)

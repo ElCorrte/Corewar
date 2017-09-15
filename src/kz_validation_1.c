@@ -29,7 +29,7 @@ int 	g_validation(char *str)
 		g_asm.c = 0;
 		y++;
 		(g_asm.fd = open(str, O_RDONLY)) == -1 ? print_usage(2, str) : 0;
-		g_file = record_file(line, str);
+		g_file = record_file(line, str, y);
 		while (get_next_line(g_asm.fd, &line) > 0)
 			g_file->labels = record_labels(line, str);
 	}

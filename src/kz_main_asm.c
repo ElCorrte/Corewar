@@ -30,6 +30,7 @@ int 	main(int argc, char **argv)
 		while (++i <= (argc - 1))
 			if (g_validation(argv[i]))
 				g_asm.a = 1; /*? print_with_a(argv[i]) : creat_file(argv[i]);*/
+		print_all_this_shit();
 	}
 	return (0);
 }
