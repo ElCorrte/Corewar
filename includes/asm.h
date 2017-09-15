@@ -50,6 +50,7 @@ void				check_and_read(char *str, int i);
 void				lets_get_null(void);
 int 				g_validation(char *str);
 t_file				*record_file(char *line, char *str);
+t_labels			*record_labels(char *line, char *str);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 

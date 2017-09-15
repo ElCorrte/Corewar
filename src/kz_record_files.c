@@ -23,7 +23,9 @@ t_file		*record_file(char *line, char *str)
 		tmp->file_name = ft_strdup(str);
 		tmp->name = NULL;
 		tmp->comment = NULL;
-		tmp->labels = record_labes(line);
+		tmp->labels = (t_labels *)malloc(sizeof(t_labels));
+		tmp->labels->str = ft_strdup(line);
+		tmp->labels->next = NULL;
 		tmp->next = NULL;
 		g_asm.c++;
 	}
