@@ -14,14 +14,25 @@
 
 void	check_and_read(char *str, int i)
 {
-
+	str = NULL;
+	i = 0;
 }
 
 int 	g_validation(char *str)
 {
+	char 	*line;
+	int 	c;
+
+	line = NULL;
+	c = 0;
 	if (!(str[0] == '-' && str[1] == 'a' && str[2] == '\0'))
 	{
-
+		(g_asm.fd = open(str, O_RDONLY)) == -1 ? print_usage(2, str) : 0;
+		while (get_next_line(g_asm.fd, &line) > 0)
+		{
+			g_file = record_file(line, c);
+			c++;
+		}
 	}
 	return (0);
 }

@@ -14,5 +14,8 @@
 
 void	lets_get_null(void)
 {
+	g_file = NULL;
+	g_labels = NULL;
 	g_asm.a = 0;
+	g_asm.fd = 0;
 }

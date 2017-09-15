@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_for_validation.c                             :+:      :+:    :+:   */
+/*   kz_record_files.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/15 14:04:22 by kzakharc          #+#    #+#             */
-/*   Updated: 2017/08/15 14:04:23 by kzakharc         ###   ########.fr       */
+/*   Created: 2017/09/15 14:26:28 by kzakharc          #+#    #+#             */
+/*   Updated: 2017/09/15 14:26:29 by kzakharc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/asm.h"
 
-void	print_usage(int i, char *str)
+t_file		*record_file(char *line, int c)
 {
-	(i == 0) ? (ft_printf("Usage: ./asm [-a] <sourcefile.s>\n\t-a : Instead of "
-			"creating a .cor file, outputs a stripped and annotated version "
-								  "of the code to the standard output\n")) : 0;
-	(i == 1) ? (ft_printf("Writing output program to %s\n", str)) : 0;
-	(i == 2) ? (ft_printf("Can't read source file %s\n", str)) : 0;
+	
 }
