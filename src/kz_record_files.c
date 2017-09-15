@@ -12,7 +12,19 @@
 
 #include "../includes/asm.h"
 
-t_file		*record_file(char *line, int c)
+t_file		*record_file(char *line, char *str)
 {
-	
+	t_file		*tmp;
+
+	tmp = g_file;
+	if (g_asm.c == 0)
+	{
+		tmp = (t_file *)malloc(sizeof(t_file));
+		tmp->file_name = ft_strdup(str);
+		tmp->name = NULL;
+		tmp->comment = NULL;
+		tmp->labels = record_labes(line);
+		tmp->next = NULL;
+		g_asm.c++;
+	}
 }

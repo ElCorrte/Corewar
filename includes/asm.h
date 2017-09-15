@@ -28,6 +28,7 @@ struct 				s_labels
 
 struct 				s_file
 {
+	char 			*file_name;
 	char 			*name;
 	char 			*comment;
 	t_labels		*labels;
@@ -37,18 +38,18 @@ struct 				s_file
 typedef struct		s_asm
 {
 	int 			a;
+	int 			c;
 	int 			fd;
 }					t_asm;
 
 t_asm				g_asm;
 t_file				*g_file;
-t_labels			*g_labels;
 
 void				print_usage(int i, char *str);
 void				check_and_read(char *str, int i);
 void				lets_get_null(void);
 int 				g_validation(char *str);
-t_file				*record_file(char *line, int c);
+t_file				*record_file(char *line, char *str);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 
