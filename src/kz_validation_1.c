@@ -12,16 +12,10 @@
 
 #include "../includes/asm.h"
 
-void	check_and_read(char *str, int i)
-{
-	str = NULL;
-	i = 0;
-}
-
 int 	g_validation(char *str)
 {
 	char		*line;
-	static int	y;;
+	static int	y;
 
 	line = NULL;
 	if (!(str[0] == '-' && str[1] == 'a' && str[2] == '\0'))
@@ -29,9 +23,11 @@ int 	g_validation(char *str)
 		g_asm.c = 0;
 		y++;
 		(g_asm.fd = open(str, O_RDONLY)) == -1 ? print_usage(2, str) : 0;
-		g_file = record_file(line, str, y);
+		if (g_asm.fd == -1)
+			return (0);
+		g_file = record_file(str, y);
 		while (get_next_line(g_asm.fd, &line) > 0)
-			g_file->labels = record_labels(line, str);
+			record_labels(line);
 	}
 	return (0);
 }

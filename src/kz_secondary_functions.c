@@ -21,3 +21,18 @@ void	lets_get_null(void)
 }
 
 void	print_all_this_shit(void)
+{
+	t_file		*tmp;
+
+	tmp = g_file;
+	while (tmp != NULL)
+	{
+		while (tmp->labels != NULL)
+		{
+			ft_printf("%s\n", tmp->labels->str);
+			tmp->labels = tmp->labels->next;
+		}
+		ft_printf("-------------------------------------------\n");
+		tmp = tmp->next;
+	}
+}

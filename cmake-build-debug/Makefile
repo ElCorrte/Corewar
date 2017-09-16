@@ -2175,6 +2175,33 @@ src/kz_print_for_validation.c.s:
 	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.s
 .PHONY : src/kz_print_for_validation.c.s
 
+src/kz_record_files.o: src/kz_record_files.c.o
+
+.PHONY : src/kz_record_files.o
+
+# target to build an object file
+src/kz_record_files.c.o:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_record_files.c.o
+.PHONY : src/kz_record_files.c.o
+
+src/kz_record_files.i: src/kz_record_files.c.i
+
+.PHONY : src/kz_record_files.i
+
+# target to preprocess a source file
+src/kz_record_files.c.i:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_record_files.c.i
+.PHONY : src/kz_record_files.c.i
+
+src/kz_record_files.s: src/kz_record_files.c.s
+
+.PHONY : src/kz_record_files.s
+
+# target to generate assembly for a file
+src/kz_record_files.c.s:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_record_files.c.s
+.PHONY : src/kz_record_files.c.s
+
 src/kz_secondary_functions.o: src/kz_secondary_functions.c.o
 
 .PHONY : src/kz_secondary_functions.o
@@ -2466,6 +2493,9 @@ help:
 	@echo "... src/kz_print_for_validation.o"
 	@echo "... src/kz_print_for_validation.i"
 	@echo "... src/kz_print_for_validation.s"
+	@echo "... src/kz_record_files.o"
+	@echo "... src/kz_record_files.i"
+	@echo "... src/kz_record_files.s"
 	@echo "... src/kz_secondary_functions.o"
 	@echo "... src/kz_secondary_functions.i"
 	@echo "... src/kz_secondary_functions.s"

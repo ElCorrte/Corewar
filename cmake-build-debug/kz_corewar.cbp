@@ -319,6 +319,9 @@
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_print_for_validation.c">
 			<Option target="kz_corewar"/>
 		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_record_files.c">
+			<Option target="kz_corewar"/>
+		</Unit>
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_secondary_functions.c">
 			<Option target="kz_corewar"/>
 		</Unit>

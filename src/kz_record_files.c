@@ -12,24 +12,26 @@
 
 #include "../includes/asm.h"
 
-t_labels	*record_labels(char *line, char *str)
+void		record_labels(char *line)
 {
-	t_labels	*tmp;
+	t_file		*q;
 
-	tmp = g_file->labels;
+	q = g_file;
+	while (q->next != NULL)
+		q = q->next;
 	if (g_asm.c == 0)
 	{
-		tmp = (t_labels *)malloc(sizeof(t_labels));
-		tmp->str = ft_strdup(line);
-		tmp->next = NULL;
-		g_asm.c++;
+		q->labels = (t_labels *)malloc(sizeof(t_labels));
+		q->labels->str = ft_strdup(line);
+		q->labels->next = NULL;
 	}
 	if (g_asm.c != 0)
-		add_label(line, tmp);
-	return (tmp);
+		add_label(line, q->labels);
+	g_asm.c++;
+	return;
 }
 
-t_file		*record_file(char *line, char *str, int y)
+t_file		*record_file(char *str, int y)
 {
 	t_file		*tmp;
 
@@ -42,10 +44,9 @@ t_file		*record_file(char *line, char *str, int y)
 		tmp->comment = NULL;
 		tmp->labels = NULL;
 		tmp->next = NULL;
-		g_asm.c++;
 	}
 	if (y != 1)
-		add_file(line, tmp, str);
+		add_file(tmp, str);
 	return (tmp);
 }
 
@@ -61,7 +62,7 @@ void		add_label(char *line, t_labels *labels)
 	tmp->next->next = NULL;
 }
 
-void		add_file(char *line, t_file *file, char *str)
+void		add_file(t_file *file, char *str)
 {
 	t_file *tmp;
 

@@ -18,7 +18,6 @@ int 	main(int argc, char **argv)
 
 	i = 0;
 	lets_get_null();
-	check_and_read("non", 0);
 	(argc == 1) ? print_usage(0, "none") : 0;
 	if (argc > 1)
 		while (++i <= (argc - 1))

@@ -80,6 +80,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/k/kzakharc/kz_corewar/Lib/src/libft/ft_toupper.c" "/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_toupper.c.o"
   "/nfs/2016/k/kzakharc/kz_corewar/src/kz_main_asm.c" "/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o"
   "/nfs/2016/k/kzakharc/kz_corewar/src/kz_print_for_validation.c" "/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.o"
+  "/nfs/2016/k/kzakharc/kz_corewar/src/kz_record_files.c" "/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/CMakeFiles/kz_corewar.dir/src/kz_record_files.c.o"
   "/nfs/2016/k/kzakharc/kz_corewar/src/kz_secondary_functions.c" "/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.o"
   "/nfs/2016/k/kzakharc/kz_corewar/src/kz_validation_1.c" "/nfs/2016/k/kzakharc/kz_corewar/cmake-build-debug/CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o"
   )
