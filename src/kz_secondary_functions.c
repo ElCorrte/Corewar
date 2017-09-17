@@ -30,11 +30,12 @@ void	lets_get_null_for_file(void)
 	g_asm.f_comment = 0;
 	g_asm.f_name = 0;
 	g_asm.line = 1;
-	g_asm.column = 1;
+	g_asm.column = 0;
 	g_asm.check_line_for_comm = 0;
 	g_asm.check_line_for_name = 0;
 }
 
+/*
 void	print_all_this_shit(void)
 {
 	t_file		*tmp;
@@ -50,4 +51,4 @@ void	print_all_this_shit(void)
 		ft_printf("-------------------------------------------\n");
 		tmp = tmp->next;
 	}
-}
+}*/

@@ -19,4 +19,5 @@ void	print_usage(int i, char *str)
 								  "of the code to the standard output\n")) : 0;
 	(i == 1) ? (ft_printf("Writing output program to %s\n", str)) : 0;
 	(i == 2) ? (ft_printf("Can't read source file %s\n", str)) : 0;
+	(i == 3) ? (ft_printf(RED "ERROR, line [%03d]\n" RESET, g_asm.line)) : 0;
 }

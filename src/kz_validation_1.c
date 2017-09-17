@@ -58,12 +58,20 @@ int		checkout_name_comm(t_file *tmp)
 		tmp->labels->str++;
 	if (!(ft_strncmp(NAME_CMD_STRING, tmp->labels->str, 5)))
 	{
+		tmp->labels->str += 5;
 		g_asm.check_line_for_name = g_asm.line;
 		g_asm.f_name++;
 	}
-	if (!(ft_strncmp(COMMENT_CMD_STRING, tmp->labels->str, 8)))
+	else if (!(ft_strncmp(COMMENT_CMD_STRING, tmp->labels->str, 8)))
 	{
+		tmp->labels->str += 8;
 		g_asm.check_line_for_comm = g_asm.line;
 		g_asm.f_comment++;
 	}
+	else {
+		print_usage(3, "none");
+		return (0);
+	}
+	while (ft_isspace(*tmp->labels->str))
+		tmp->labels->str++;
 }

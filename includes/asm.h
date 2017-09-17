@@ -75,6 +75,6 @@ int 				looking_for_errors(void);
 int 				checkout_name_comm(t_file *tmp);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
-void				print_all_this_shit();
+/*void				print_all_this_shit();*/
 
 #endif
