@@ -2256,6 +2256,33 @@ src/kz_validation_1.c.s:
 	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.s
 .PHONY : src/kz_validation_1.c.s
 
+src/op.o: src/op.c.o
+
+.PHONY : src/op.o
+
+# target to build an object file
+src/op.c.o:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/op.c.o
+.PHONY : src/op.c.o
+
+src/op.i: src/op.c.i
+
+.PHONY : src/op.i
+
+# target to preprocess a source file
+src/op.c.i:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/op.c.i
+.PHONY : src/op.c.i
+
+src/op.s: src/op.c.s
+
+.PHONY : src/op.s
+
+# target to generate assembly for a file
+src/op.c.s:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/op.c.s
+.PHONY : src/op.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2502,6 +2529,9 @@ help:
 	@echo "... src/kz_validation_1.o"
 	@echo "... src/kz_validation_1.i"
 	@echo "... src/kz_validation_1.s"
+	@echo "... src/op.o"
+	@echo "... src/op.i"
+	@echo "... src/op.s"
 .PHONY : help
 
 

@@ -313,6 +313,9 @@
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/includes/asm.h">
 			<Option target="kz_corewar"/>
 		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/includes/op.h">
+			<Option target="kz_corewar"/>
+		</Unit>
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_main_asm.c">
 			<Option target="kz_corewar"/>
 		</Unit>
@@ -326,6 +329,9 @@
 			<Option target="kz_corewar"/>
 		</Unit>
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_validation_1.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/op.c">
 			<Option target="kz_corewar"/>
 		</Unit>
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/CMakeLists.txt">

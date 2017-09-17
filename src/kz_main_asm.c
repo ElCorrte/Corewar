@@ -27,8 +27,11 @@ int 	main(int argc, char **argv)
 	if (argc > 1)
 	{
 		while (++i <= (argc - 1))
+		{
+			lets_get_null_for_file();
 			if (g_validation(argv[i]))
 				g_asm.a = 1; /*? print_with_a(argv[i]) : creat_file(argv[i]);*/
+		}
 		print_all_this_shit();
 	}
 	return (0);
