@@ -41,7 +41,7 @@ t_file		*record_file(char *str, int y)
 		tmp = (t_file *)malloc(sizeof(t_file));
 		tmp->file_name = ft_strdup(str);
 		tmp->name = NULL;
-		tmp->comment = NULL;
+		tmp->comm = NULL;
 		tmp->labels = NULL;
 		tmp->next = NULL;
 	}
@@ -72,7 +72,7 @@ void		add_file(t_file *file, char *str)
 	tmp->next = (t_file *)malloc(sizeof(t_file));
 	tmp->next->file_name = ft_strdup(str);
 	tmp->next->name = NULL;
-	tmp->next->comment = NULL;
+	tmp->next->comm = NULL;
 	tmp->next->labels = NULL;
 	tmp->next->next = NULL;
 }

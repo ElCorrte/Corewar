@@ -42,7 +42,7 @@ struct 				s_file
 {
 	char 			*file_name;
 	char 			*name;
-	char 			*comment;
+	char 			*comm;
 	t_labels		*labels;
 	t_file			*next;
 };
@@ -52,8 +52,6 @@ typedef struct		s_asm
 	int 			a;
 	int 			c;
 	int 			fd;
-	int 			check_line_for_name;
-	int 			check_line_for_comm;
 	int 			f_name;
 	int 			f_comment;
 	int 			line;
@@ -72,7 +70,9 @@ void				record_labels(char *line);
 void				add_file(t_file *file, char *str);
 void				add_label(char *line, t_labels *labels);
 int 				looking_for_errors(void);
-int 				checkout_name_comm(t_file *tmp);
+int 				checkout_name_comm(t_file *tmp, int a);
+int 				check_comment(t_file *tmp, int i, int a);
+int 				check_no_repit(void);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 /*void				print_all_this_shit();*/
