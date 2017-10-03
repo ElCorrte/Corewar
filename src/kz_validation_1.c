@@ -57,13 +57,7 @@ int 	looking_for_errors(void)
 
 int		checkout_name_comm(t_file *tmp, int a)
 {
-	while (ft_isspace(*tmp->labels->str) || (*tmp->labels->str == '\0'))
-	{
-		while (ft_isspace(*tmp->labels->str))
-			tmp->labels->str++;
-		if (*tmp->labels->str == '\0')
-			tmp->labels = tmp->labels->next;
-	}
+	tmp->labels = skip_blank_lines(tmp);
 	if (!(ft_strncmp(NAME_CMD_STRING, tmp->labels->str, 5)))
 	{
 		tmp->labels->str += 5;
@@ -93,6 +87,7 @@ int 	check_comment(t_file *tmp, int i, int a)
 {
 	int		n;
 
+	n = 0;
 	if (*tmp->labels->str == '"')
 	{
 		tmp->labels->str++;
@@ -106,18 +101,8 @@ int 	check_comment(t_file *tmp, int i, int a)
 		n = i + 1;
 		while (ft_isspace(tmp->labels->str[n]))
 			n++;
-		if (tmp->labels->str[i] == '"' && tmp->labels->str[n] == '\0')
-		{
-			if (a == 1)
-				tmp->name = ft_strnew((size_t)i);
-			else
-				tmp->comm = ft_strnew((size_t)i);
-			if (a == 1)
-				tmp->name = ft_strncpy(tmp->name, tmp->labels->str, (size_t)i);
-			else
-				tmp->comm = ft_strncpy(tmp->comm, tmp->labels->str, (size_t)i);
+		if (finaly_check_name_comm(tmp, i, n, a))
 			return (1);
-		}
 		else
 			print_usage(4, "none");
 	}

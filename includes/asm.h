@@ -73,6 +73,8 @@ int 				looking_for_errors(void);
 int 				checkout_name_comm(t_file *tmp, int a);
 int 				check_comment(t_file *tmp, int i, int a);
 int 				check_no_repit(t_file *tmp);
+t_labels			*skip_blank_lines(t_file *tmp);
+int 				finaly_check_name_comm(t_file *tmp, int i, int n, int a);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 /*void				print_all_this_shit();*/

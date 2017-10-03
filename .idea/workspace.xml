@@ -12,13 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c6c6c3-1e58-4981-a864-6ef0ca36d3a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/kz_corewar" afterPath="$PROJECT_DIR$/cmake-build-debug/kz_corewar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/C.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.make" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/asm.h" afterPath="$PROJECT_DIR$/includes/asm.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_print_for_validation.c" afterPath="$PROJECT_DIR$/src/kz_print_for_validation.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_secondary_functions.c" afterPath="$PROJECT_DIR$/src/kz_secondary_functions.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_validation_1.c" afterPath="$PROJECT_DIR$/src/kz_validation_1.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -91,8 +87,8 @@
               <file leaf-file-name="kz_validation_1.c" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/kz_validation_1.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="564">
-                      <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+                    <state relative-caret-position="1620">
+                      <caret line="108" column="8" lean-forward="false" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
                       <folding />
                     </state>
                   </provider>
@@ -117,8 +113,8 @@
           <file leaf-file-name="asm.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/includes/asm.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="915">
-                  <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+                <state relative-caret-position="1140">
+                  <caret line="76" column="75" lean-forward="false" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
                   <folding>
                     <element signature="e#921#957#0" expanded="true" />
                   </folding>
@@ -129,8 +125,8 @@
           <file leaf-file-name="kz_secondary_functions.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/kz_secondary_functions.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+                <state relative-caret-position="945">
+                  <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -154,9 +150,9 @@
         <option value="$PROJECT_DIR$/src/op.c" />
         <option value="$PROJECT_DIR$/src/kz_main_asm.c" />
         <option value="$PROJECT_DIR$/src/kz_record_files.c" />
-        <option value="$PROJECT_DIR$/src/kz_secondary_functions.c" />
         <option value="$PROJECT_DIR$/src/kz_print_for_validation.c" />
         <option value="$PROJECT_DIR$/includes/asm.h" />
+        <option value="$PROJECT_DIR$/src/kz_secondary_functions.c" />
         <option value="$PROJECT_DIR$/src/kz_validation_1.c" />
       </list>
     </option>
@@ -470,7 +466,7 @@
       <workItem from="1506353354083" duration="1206000" />
       <workItem from="1506424914737" duration="9636000" />
       <workItem from="1507036423089" duration="4741000" />
-      <workItem from="1507045235675" duration="1819000" />
+      <workItem from="1507045235675" duration="2735000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1502801635930</created>
@@ -556,11 +552,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506184983748</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="before contraction">
+      <created>1507047511389</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1507047511390</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104299000" />
+    <option name="totallyTimeSpent" value="105215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -601,7 +604,8 @@
     <MESSAGE value="start validation" />
     <MESSAGE value="first error ;)" />
     <MESSAGE value="wtf(" />
-    <option name="LAST_COMMIT_MESSAGE" value="wtf(" />
+    <MESSAGE value="before contraction" />
+    <option name="LAST_COMMIT_MESSAGE" value="before contraction" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -987,14 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz_secondary_functions.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kz_print_for_validation.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1003,21 +999,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/asm.h">
+    <entry file="file://$PROJECT_DIR$/src/kz_secondary_functions.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-          <folding>
-            <element signature="e#921#957#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="945">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kz_validation_1.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        <state relative-caret-position="1620">
+          <caret line="108" column="8" lean-forward="false" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/asm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="75" lean-forward="false" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
+          <folding>
+            <element signature="e#921#957#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -33,6 +33,35 @@ void	lets_get_null_for_file(void)
 	g_asm.column = 0;
 }
 
+t_labels	*skip_blank_lines(t_file *tmp)
+{
+	while (ft_isspace(*tmp->labels->str) || (*tmp->labels->str == '\0'))
+	{
+		while (ft_isspace(*tmp->labels->str))
+			tmp->labels->str++;
+		if (*tmp->labels->str == '\0')
+			tmp->labels = tmp->labels->next;
+	}
+	return (tmp->labels);
+}
+
+int 		finaly_check_name_comm(t_file *tmp, int i, int n, int a)
+{
+	if (tmp->labels->str[i] == '"' && tmp->labels->str[n] == '\0')
+	{
+		if (a == 1)
+			tmp->name = ft_strnew((size_t)i);
+		else
+			tmp->comm = ft_strnew((size_t)i);
+		if (a == 1)
+			tmp->name = ft_strncpy(tmp->name, tmp->labels->str, (size_t)i);
+		else
+			tmp->comm = ft_strncpy(tmp->comm, tmp->labels->str, (size_t)i);
+		return (1);
+	}
+	return (0);
+}
+
 /*
 void	print_all_this_shit(void)
 {
