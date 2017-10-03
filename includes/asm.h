@@ -61,7 +61,7 @@ typedef struct		s_asm
 t_asm				g_asm;
 t_file				*g_file;
 
-void				print_usage(int i, char *str);
+void				print_usage(int i, char *s);
 void				lets_get_null(void);
 void				lets_get_null_for_file(void);
 int 				g_validation(char *str);
@@ -72,7 +72,7 @@ void				add_label(char *line, t_labels *labels);
 int 				looking_for_errors(void);
 int 				checkout_name_comm(t_file *tmp, int a);
 int 				check_comment(t_file *tmp, int i, int a);
-int 				check_no_repit(void);
+int 				check_no_repit(t_file *tmp);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 /*void				print_all_this_shit();*/

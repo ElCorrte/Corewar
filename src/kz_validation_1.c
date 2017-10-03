@@ -47,7 +47,7 @@ int 	looking_for_errors(void)
 		while (tmp->labels->str[0] == '\0')
 			tmp->labels = tmp->labels->next;
 		if (g_asm.line == 1 || g_asm.line == 2)
-			if (!(checkout_name_comm(tmp, 0)))
+			if (!(checkout_name_comm(tmp, 0)) )
 				return (0);
 		tmp->labels = tmp->labels->next;
 		g_asm.line++;
@@ -57,8 +57,13 @@ int 	looking_for_errors(void)
 
 int		checkout_name_comm(t_file *tmp, int a)
 {
-	while (ft_isspace(*tmp->labels->str))
-		tmp->labels->str++;
+	while (ft_isspace(*tmp->labels->str) || (*tmp->labels->str == '\0'))
+	{
+		while (ft_isspace(*tmp->labels->str))
+			tmp->labels->str++;
+		if (*tmp->labels->str == '\0')
+			tmp->labels = tmp->labels->next;
+	}
 	if (!(ft_strncmp(NAME_CMD_STRING, tmp->labels->str, 5)))
 	{
 		tmp->labels->str += 5;
@@ -70,7 +75,7 @@ int		checkout_name_comm(t_file *tmp, int a)
 		tmp->labels->str += 8;
 		g_asm.f_comment++;
 	}
-	else if (check_no_repit())
+	else if (check_no_repit(tmp))
 	{
 		print_usage(3, "none");
 		return (0);
@@ -79,23 +84,29 @@ int		checkout_name_comm(t_file *tmp, int a)
 		return (0);
 	while (ft_isspace(*tmp->labels->str))
 		tmp->labels->str++;
-	if (check_no_repit())
-		return (check_comment(tmp, -1, a));
+	if (check_no_repit(tmp))
+		return (check_comment(tmp, 0, a));
 	return (0);
 }
 
 int 	check_comment(t_file *tmp, int i, int a)
 {
+	int		n;
+
 	if (*tmp->labels->str == '"')
 	{
 		tmp->labels->str++;
-		while (tmp->labels->str[++i] != '"' && *tmp->labels->str);
+		while (tmp->labels->str[i] != '"' && tmp->labels->str[i] != '\0')
+			i++;
 		if (tmp->labels->str[i] == '\0')
 		{
 			print_usage(4, "none");
 			return (0);
 		}
-		if (tmp->labels->str[i] == '"')
+		n = i + 1;
+		while (ft_isspace(tmp->labels->str[n]))
+			n++;
+		if (tmp->labels->str[i] == '"' && tmp->labels->str[n] == '\0')
 		{
 			if (a == 1)
 				tmp->name = ft_strnew((size_t)i);
@@ -107,32 +118,24 @@ int 	check_comment(t_file *tmp, int i, int a)
 				tmp->comm = ft_strncpy(tmp->comm, tmp->labels->str, (size_t)i);
 			return (1);
 		}
+		else
+			print_usage(4, "none");
 	}
 	else
 		print_usage(4, "none");
 	return (0);
 }
 
-int 	check_no_repit(void)
+int 	check_no_repit(t_file *tmp)
 {
-	if (g_asm.line == 2 && g_asm.f_name == 0)
+	if (g_asm.line == 2 && (g_asm.f_name == 0 || g_asm.f_comment == 0))
 	{
-		print_usage(5, "none");
-		return (0);
-	}
-	else if (g_asm.line == 2 && g_asm.f_comment == 0)
-	{
-		print_usage(8, "none");
-		return (0);
-	}
-	else if (g_asm.f_name > 1)
-	{
-		print_usage(6, "none");
-		return (0);
-	}
-	else if (g_asm.f_comment > 1)
-	{
-		print_usage(7, "none");
+		if ((g_asm.f_name == 0) && (g_asm.f_comment > 1))
+			print_usage(5, ".comment");
+		else if ((g_asm.f_comment == 0) && (g_asm.f_name > 1))
+			print_usage(6, ".name");
+		else
+			print_usage(7, tmp->labels->str);
 		return (0);
 	}
 	return (1);

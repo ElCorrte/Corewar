@@ -406,3 +406,7 @@ op.h
 ../includes/asm.h
 /nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
 
+/nfs/2016/k/kzakharc/kz_corewar/src/op.c
+../includes/asm.h
+/nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
+

@@ -269,3 +269,10 @@ CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o: ../includes/asm.h
 CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o: ../includes/op.h
 CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o: ../src/kz_validation_1.c
 
+CMakeFiles/kz_corewar.dir/src/op.c.o: ../Lib/src/ft_printf/ft_printf.h
+CMakeFiles/kz_corewar.dir/src/op.c.o: ../Lib/src/get_next_line/get_next_line.h
+CMakeFiles/kz_corewar.dir/src/op.c.o: ../Lib/src/libft/libft.h
+CMakeFiles/kz_corewar.dir/src/op.c.o: ../includes/asm.h
+CMakeFiles/kz_corewar.dir/src/op.c.o: ../includes/op.h
+CMakeFiles/kz_corewar.dir/src/op.c.o: ../src/op.c
+
