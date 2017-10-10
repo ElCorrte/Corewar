@@ -12,206 +12,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c6c6c3-1e58-4981-a864-6ef0ca36d3a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz_validation_2.c" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeCCompiler.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeCXXCompiler.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeDetermineCompilerABI_C.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CMakeSystem.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdC/a.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdCXX/a.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/filler.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/filler.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/filler.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/filler.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/filler.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/filler.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/all_for_flags.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/bonus.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/else.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/for_bc.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/for_bs.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/for_print.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/ft_it_base.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/ft_printf.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/tp_f.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/tp_s.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/ft_printf/wid_prec.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/get_next_line/get_next_line.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_atoi.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_bzero.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_cntwords.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_countdigits.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_isalnum.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_isalpha.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_isascii.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_isdigit.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_isprint.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_isspace.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_isspace_s.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_itoa.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_lstadd.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_lstdel.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_lstdelone.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_lstiter.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_lstmap.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_lstnew.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_memalloc.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_memccpy.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_memchr.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_memcmp.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_memcpy.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_memdel.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_memmove.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_memset.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_putchar.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_putchar_fd.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_putendl.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_putendl_fd.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_putnbr.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_putnbr_fd.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_putstr.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_putstr_fd.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strcat.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strchr.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strclr.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strcmp.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strcpy.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strdel.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strdup.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strequ.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_striter.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_striteri.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strjoin.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strlcat.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strlen.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strmap.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strmapi.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strncat.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strncmp.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strncpy.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strnequ.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strnew.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strnstr.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strrchr.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strsplit.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strstr.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strsub.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_strtrim.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_tolower.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/Lib/src/libft/ft_toupper.c.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.internal" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/link.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/main_asm.c.o" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz_secondary_functions_1.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/._Lib" afterPath="$PROJECT_DIR$/._Lib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/all_for_flags.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/all_for_flags.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/bonus.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/bonus.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/else.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/else.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/for_bc.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/for_bc.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/for_bs.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/for_bs.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/for_print.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/for_print.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/ft_it_base.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/ft_it_base.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/ft_printf.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/ft_printf.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/tp_f.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/tp_f.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/tp_s.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/tp_s.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/wid_prec.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/ft_printf/wid_prec.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/get_next_line/get_next_line.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/get_next_line/get_next_line.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_atoi.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_atoi.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_bzero.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_bzero.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_cntwords.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_cntwords.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_countdigits.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_countdigits.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isalnum.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isalnum.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isalpha.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isalpha.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isascii.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isascii.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isdigit.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isdigit.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isprint.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isprint.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isspace.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isspace.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isspace_s.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_isspace_s.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_itoa.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_itoa.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstadd.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstadd.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstdel.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstdel.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstdelone.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstdelone.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstiter.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstiter.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstmap.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstmap.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstnew.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_lstnew.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memalloc.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memalloc.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memccpy.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memccpy.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memchr.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memchr.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memcmp.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memcmp.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memcpy.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memcpy.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memdel.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memdel.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memmove.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memmove.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memset.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_memset.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putchar.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putchar.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putchar_fd.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putchar_fd.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putendl.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putendl.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putendl_fd.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putendl_fd.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putnbr.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putnbr.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putnbr_fd.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putnbr_fd.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putstr.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putstr.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putstr_fd.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_putstr_fd.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strcat.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strcat.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strchr.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strchr.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strclr.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strclr.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strcmp.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strcmp.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strcpy.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strcpy.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strdel.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strdel.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strdup.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strdup.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strequ.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strequ.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_striter.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_striter.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_striteri.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_striteri.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strjoin.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strjoin.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strlcat.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strlcat.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strlen.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strlen.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strmap.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strmap.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strmapi.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strmapi.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strncat.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strncat.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strncmp.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strncmp.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strncpy.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strncpy.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strnequ.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strnequ.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strnew.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strnew.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strnstr.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strnstr.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strrchr.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strrchr.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strsplit.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strsplit.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strstr.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strstr.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strsub.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strsub.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strtrim.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_strtrim.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_tolower.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_tolower.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_toupper.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_toupper.c.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/kz_corewar" afterPath="$PROJECT_DIR$/cmake-build-debug/kz_corewar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/C.includecache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/DependInfo.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/build.make" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/flags.make" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/link.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/progress.make" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/kz_corewar.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/kz_corewar.cbp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/asm.h" afterPath="$PROJECT_DIR$/includes/asm.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_main_asm.c" afterPath="$PROJECT_DIR$/src/kz_main_asm.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_print_for_validation.c" afterPath="$PROJECT_DIR$/src/kz_print_for_validation.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_record_files.c" afterPath="$PROJECT_DIR$/src/kz_record_files.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_secondary_functions.c" afterPath="$PROJECT_DIR$/src/kz_secondary_functions.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_validation_1.c" afterPath="$PROJECT_DIR$/src/kz_validation_1.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_validation_2.c" afterPath="$PROJECT_DIR$/src/kz_validation_2.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -226,14 +47,14 @@
       <split-first>
         <splitter split-orientation="horizontal" split-proportion="0.48475373">
           <split-first>
-            <splitter split-orientation="vertical" split-proportion="0.46569344">
+            <splitter split-orientation="vertical" split-proportion="0.5227098">
               <split-first>
                 <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
                   <file leaf-file-name="kz_main_asm.c" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/src/kz_main_asm.c">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="417">
-                          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                        <state relative-caret-position="495">
+                          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
                           <folding />
                         </state>
                       </provider>
@@ -242,8 +63,8 @@
                   <file leaf-file-name="kz_record_files.c" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/src/kz_record_files.c">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="390">
-                          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+                        <state relative-caret-position="450">
+                          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
                           <folding />
                         </state>
                       </provider>
@@ -256,8 +77,8 @@
                   <file leaf-file-name="op.c" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/src/op.c">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="480">
-                          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+                        <state relative-caret-position="225">
+                          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
                           <folding />
                         </state>
                       </provider>
@@ -268,24 +89,24 @@
             </splitter>
           </split-first>
           <split-second>
-            <splitter split-orientation="vertical" split-proportion="0.84911245">
+            <splitter split-orientation="vertical" split-proportion="0.18876405">
               <split-first>
                 <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-                  <file leaf-file-name="kz_print_for_validation.c" pinned="false" current-in-tab="false">
+                  <file leaf-file-name="kz_print_for_validation.c" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/src/kz_print_for_validation.c">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="510">
-                          <caret line="34" column="60" lean-forward="false" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+                        <state relative-caret-position="690">
+                          <caret line="46" column="66" lean-forward="false" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
                           <folding />
                         </state>
                       </provider>
                     </entry>
                   </file>
-                  <file leaf-file-name="kz_validation_1.c" pinned="false" current-in-tab="true">
+                  <file leaf-file-name="kz_validation_1.c" pinned="false" current-in-tab="false">
                     <entry file="file://$PROJECT_DIR$/src/kz_validation_1.c">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="415">
-                          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+                        <state relative-caret-position="465">
+                          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
                           <folding />
                         </state>
                       </provider>
@@ -298,8 +119,8 @@
                   <file leaf-file-name="kz_validation_2.c" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/src/kz_validation_2.c">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="306">
-                          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+                        <state relative-caret-position="863">
+                          <caret line="99" column="44" lean-forward="false" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
                           <folding />
                         </state>
                       </provider>
@@ -323,11 +144,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="asm.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="asm.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/includes/asm.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1215">
-                  <caret line="81" column="43" lean-forward="false" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
+                <state relative-caret-position="808">
+                  <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
                   <folding>
                     <element signature="e#921#957#0" expanded="true" />
                   </folding>
@@ -335,11 +156,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="kz_secondary_functions.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="kz_secondary_functions.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/kz_secondary_functions.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="847">
-                  <caret line="70" column="5" lean-forward="false" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+                <state relative-caret-position="388">
+                  <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -361,14 +182,15 @@
         <option value="$PROJECT_DIR$/src/secondary functions.c" />
         <option value="$PROJECT_DIR$/src/kz_secondary functions.c" />
         <option value="$PROJECT_DIR$/src/op.c" />
+        <option value="$PROJECT_DIR$/includes/op.h" />
         <option value="$PROJECT_DIR$/src/kz_record_files.c" />
         <option value="$PROJECT_DIR$/src/kz_main_asm.c" />
+        <option value="$PROJECT_DIR$/src/kz_secondary_functions_1.c" />
         <option value="$PROJECT_DIR$/src/kz_print_for_validation.c" />
-        <option value="$PROJECT_DIR$/includes/op.h" />
-        <option value="$PROJECT_DIR$/src/kz_validation_2.c" />
         <option value="$PROJECT_DIR$/includes/asm.h" />
-        <option value="$PROJECT_DIR$/src/kz_validation_1.c" />
         <option value="$PROJECT_DIR$/src/kz_secondary_functions.c" />
+        <option value="$PROJECT_DIR$/src/kz_validation_1.c" />
+        <option value="$PROJECT_DIR$/src/kz_validation_2.c" />
       </list>
     </option>
   </component>
@@ -661,7 +483,7 @@
       <workItem from="1507467527449" duration="2347000" />
       <workItem from="1507470663643" duration="2408000" />
       <workItem from="1507551760607" duration="11250000" />
-      <workItem from="1507627344715" duration="1918000" />
+      <workItem from="1507627344715" duration="18023000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1502801635930</created>
@@ -761,14 +583,22 @@
       <option name="project" value="LOCAL" />
       <updated>1507048430342</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="interim commit">
+      <created>1507629349288</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1507629349288</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142883000" />
+    <option name="totallyTimeSpent" value="158988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08975377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -780,7 +610,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991952" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29188004" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.023408925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -807,18 +637,19 @@
     <MESSAGE value="wtf(" />
     <MESSAGE value="before contraction" />
     <MESSAGE value="after contraction" />
-    <option name="LAST_COMMIT_MESSAGE" value="after contraction" />
+    <MESSAGE value="interim commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="interim commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/kz_validation_1.c</url>
-          <line>38</line>
-          <option name="timeStamp" value="54" />
+          <url>file://$PROJECT_DIR$/src/kz_validation_2.c</url>
+          <line>45</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="55" />
+      <option name="time" value="67" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -829,14 +660,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/kz_record_files.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kz_print_for_validation.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1136,13 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/src/get_next_line/get_next_line.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/op.h" />
     <entry file="file://$PROJECT_DIR$/op.c" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
@@ -1154,34 +970,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kz_record_files.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="450">
+          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/src/get_next_line/get_next_line.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz_main_asm.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz_secondary_functions_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/src/libft/ft_strlen.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/op.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        <state relative-caret-position="225">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/asm.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" column="43" lean-forward="false" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
-          <folding>
-            <element signature="e#921#957#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1193,42 +1024,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz_secondary_functions.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/asm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+          <folding>
+            <element signature="e#921#957#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz_validation_1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/kz_print_for_validation.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="60" lean-forward="false" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+        <state relative-caret-position="690">
+          <caret line="46" column="66" lean-forward="false" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kz_validation_2.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz_secondary_functions.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="70" column="5" lean-forward="false" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz_main_asm.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz_validation_1.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="863">
+          <caret line="99" column="44" lean-forward="false" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
           <folding />
         </state>
       </provider>

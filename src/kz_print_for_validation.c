@@ -29,11 +29,21 @@ int		print_usage(int i, char *s)
 	(i == 8) ? (ft_printf(RED "Invalid instruction at line "
 								  "[%03d]\n" RESET, g_asm.l)) : 0;
 	(i == 9) ?
-	(ft_printf(YEL "Lexical error at line [%03d]\n" RESET, g_asm.l)) : 0;
-	(i == 10) ?
-	(ft_printf(MAG "Syntax error. No token ':' after label, "
-					   "line [%03d]\n" RESET, g_asm.l)) : 0;
+	(ft_printf(BBLU "Syntax error - unexpected end of input (Perhaps you forgot "
+					   "to end with a newline?)\n" RESET)) : 0;
+	(i == 10) ? (ft_printf(RED "%s\n" RESET, s)) : 0;
 	(i == 11) ?
 	(ft_printf(MAG "Syntax error at line [%03d]\n" RESET, g_asm.l)) : 0;
+	(i == 12) ? (ft_printf(BCYN BLA "%s\n" RESET, s)) : 0;
+	(i == 13) ?
+	(ft_printf(MAG "Syntax error at line [%03d], no separator after "
+					   "instruction '%s'\n" RESET, g_asm.l, s)) : 0;
+	return (0);
+}
+
+int 	print_usage_1(int i, char *s, int param, char *p)
+{
+	(i == 0) ? (ft_printf(BRED "Invalid parameter %d type %s for instruction "
+								  "%s\n" RESET, param, p, s)) : 0;
 	return (0);
 }

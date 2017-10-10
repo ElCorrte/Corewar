@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.o"
   "CMakeFiles/kz_corewar.dir/src/kz_record_files.c.o"
   "CMakeFiles/kz_corewar.dir/src/kz_secondary_functions.c.o"
+  "CMakeFiles/kz_corewar.dir/src/kz_secondary_functions_1.c.o"
   "CMakeFiles/kz_corewar.dir/src/kz_validation_1.c.o"
   "CMakeFiles/kz_corewar.dir/src/kz_validation_2.c.o"
   "CMakeFiles/kz_corewar.dir/src/op.c.o"

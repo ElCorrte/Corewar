@@ -56,6 +56,7 @@ typedef struct		s_asm
 	int 			f_comment;
 	int 			line;
 	int 			l;
+	int				q;
 }					t_asm;
 
 t_asm				g_asm;
@@ -63,6 +64,7 @@ t_file				*g_file;
 t_op				g_tab[17];
 
 int					print_usage(int i, char *s);
+int					print_usage_1(int i, char *s, int param, char *p);
 void				lets_get_null(void);
 void				lets_get_null_for_file(void);
 int 				g_validation(char *str);
@@ -80,8 +82,8 @@ int 				checkout_body(t_file *tmp, int a, int i);
 int 				check_param(t_file *tmp, int i);
 int 				find_name(t_file *tmp, int i);
 int 				find_char(char c, int i);
+int 				instruction_with_one_param(t_file *tmp, int i);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
-/*void				print_all_this_shit();*/
 
 #endif

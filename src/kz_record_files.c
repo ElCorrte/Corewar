@@ -28,7 +28,6 @@ void		record_labels(char *line)
 	if (g_asm.c != 0)
 		add_label(line, q->labels);
 	g_asm.c++;
-	return;
 }
 
 t_file		*record_file(char *str, int y)

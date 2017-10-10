@@ -22,6 +22,7 @@ void	lets_get_null(void)
 	g_asm.f_name = 0;
 	g_asm.line = 1;
 	g_asm.l = 1;
+	g_asm.q = 0;
 }
 
 void	lets_get_null_for_file(void)
@@ -31,6 +32,7 @@ void	lets_get_null_for_file(void)
 	g_asm.f_name = 0;
 	g_asm.line = 1;
 	g_asm.l = 1;
+	g_asm.q = 0;
 }
 
 int 	find_char(char c, int i)
@@ -88,21 +90,3 @@ int 		finaly_check_name_comm(t_file *tmp, int i, int n, int a)
 	}
 	return (0);
 }
-
-/*
-void	print_all_this_shit(void)
-{
-	t_file		*tmp;
-
-	tmp = g_file;
-	while (tmp != NULL)
-	{
-		while (tmp->labels != NULL)
-		{
-			ft_printf("%s\n", tmp->labels->str);
-			tmp->labels = tmp->labels->next;
-		}
-		ft_printf("-------------------------------------------\n");
-		tmp = tmp->next;
-	}
-}*/

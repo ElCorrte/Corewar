@@ -15,6 +15,7 @@
 int 	g_validation(char *str)
 {
 	char		*line;
+	char 		c[1];
 	static int	y;
 
 	line = NULL;
@@ -24,9 +25,17 @@ int 	g_validation(char *str)
 		if ((g_asm.fd = open(str, O_RDONLY)) == -1)
 			return (print_usage(2, str));
 		g_file = record_file(str, y);
+		if (lseek(g_asm.fd, -1, SEEK_END) < 0)
+			return (print_usage(10, "Seek Error"));
+		if (read(g_asm.fd, c, 1) < 0)
+			return (print_usage(10, "Read Error"));
+		if (lseek(g_asm.fd, 0, SEEK_SET) < 0)
+			return (print_usage(10, "Seek Error"));
 		while (get_next_line(g_asm.fd, &line) > 0)
 			record_labels(line);
-		if (looking_for_errors())
+		if (c[0] != '\n' && (g_asm.q = looking_for_errors()) != 2)
+			return (print_usage(9, str));
+		else if (g_asm.q > 0)
 			return (1);
 	}
 	return (0);
@@ -43,7 +52,7 @@ int 	looking_for_errors(void)
 	{
 		tmp->labels = skip_blank_lines(tmp);
 		if (*tmp->labels->str == '\0' && tmp->labels->next == NULL)
-			break ;
+			return (2);
 		if (g_asm.line == 1 || g_asm.line == 2)
 			if (!(checkout_name_comm(tmp, 0)))
 				return (0);
@@ -54,6 +63,10 @@ int 	looking_for_errors(void)
 		g_asm.line++;
 		g_asm.l++;
 	}
+	if (ft_strlen(tmp->name) > 128)
+		return (print_usage(12, "Champion name too long (Max length 128)"));
+	if (ft_strlen(tmp->comm) > 2048)
+		return (print_usage(12, "Champion comment too long (Max length 2048)"));
 	return (1);
 }
 
