@@ -55,13 +55,14 @@ typedef struct		s_asm
 	int 			f_name;
 	int 			f_comment;
 	int 			line;
-	int 			column;
+	int 			l;
 }					t_asm;
 
 t_asm				g_asm;
 t_file				*g_file;
+t_op				g_tab[17];
 
-void				print_usage(int i, char *s);
+int					print_usage(int i, char *s);
 void				lets_get_null(void);
 void				lets_get_null_for_file(void);
 int 				g_validation(char *str);
@@ -75,6 +76,10 @@ int 				check_comment(t_file *tmp, int i, int a);
 int 				check_no_repit(t_file *tmp);
 t_labels			*skip_blank_lines(t_file *tmp);
 int 				finaly_check_name_comm(t_file *tmp, int i, int n, int a);
+int 				checkout_body(t_file *tmp, int a, int i);
+int 				check_param(t_file *tmp, int i);
+int 				find_name(t_file *tmp, int i);
+int 				find_char(char c, int i);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 /*void				print_all_this_shit();*/

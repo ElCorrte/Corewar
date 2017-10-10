@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -403,6 +403,10 @@ op.h
 /nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
 
 /nfs/2016/k/kzakharc/kz_corewar/src/kz_validation_1.c
+../includes/asm.h
+/nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
+
+/nfs/2016/k/kzakharc/kz_corewar/src/kz_validation_2.c
 ../includes/asm.h
 /nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
 

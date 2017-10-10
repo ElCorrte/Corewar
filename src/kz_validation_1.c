@@ -22,10 +22,7 @@ int 	g_validation(char *str)
 	{
 		y++;
 		if ((g_asm.fd = open(str, O_RDONLY)) == -1)
-		{
-			print_usage(2, str);
-			return (0);
-		}
+			return (print_usage(2, str));
 		g_file = record_file(str, y);
 		while (get_next_line(g_asm.fd, &line) > 0)
 			record_labels(line);
@@ -44,13 +41,18 @@ int 	looking_for_errors(void)
 		tmp = tmp->next;
 	while (tmp->labels != NULL)
 	{
-		while (tmp->labels->str[0] == '\0')
-			tmp->labels = tmp->labels->next;
+		tmp->labels = skip_blank_lines(tmp);
+		if (*tmp->labels->str == '\0' && tmp->labels->next == NULL)
+			break ;
 		if (g_asm.line == 1 || g_asm.line == 2)
-			if (!(checkout_name_comm(tmp, 0)) )
+			if (!(checkout_name_comm(tmp, 0)))
+				return (0);
+		if (g_asm.line > 2 && tmp->labels->str)
+			if (!(checkout_body(tmp, 0, 0)))
 				return (0);
 		tmp->labels = tmp->labels->next;
 		g_asm.line++;
+		g_asm.l++;
 	}
 	return (1);
 }
@@ -70,10 +72,7 @@ int		checkout_name_comm(t_file *tmp, int a)
 		g_asm.f_comment++;
 	}
 	else if (check_no_repit(tmp))
-	{
-		print_usage(3, "none");
-		return (0);
-	}
+		return (print_usage(3, "none"));
 	else
 		return (0);
 	while (ft_isspace(*tmp->labels->str))
@@ -87,24 +86,20 @@ int 	check_comment(t_file *tmp, int i, int a)
 {
 	int		n;
 
-	n = 0;
 	if (*tmp->labels->str == '"')
 	{
 		tmp->labels->str++;
 		while (tmp->labels->str[i] != '"' && tmp->labels->str[i] != '\0')
 			i++;
 		if (tmp->labels->str[i] == '\0')
-		{
-			print_usage(4, "none");
-			return (0);
-		}
+			return (print_usage(11, "none"));
 		n = i + 1;
 		while (ft_isspace(tmp->labels->str[n]))
 			n++;
 		if (finaly_check_name_comm(tmp, i, n, a))
 			return (1);
 		else
-			print_usage(4, "none");
+			print_usage(11, "none");
 	}
 	else
 		print_usage(4, "none");
