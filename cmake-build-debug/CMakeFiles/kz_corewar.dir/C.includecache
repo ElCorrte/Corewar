@@ -402,6 +402,10 @@ op.h
 ../includes/asm.h
 /nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
 
+/nfs/2016/k/kzakharc/kz_corewar/src/kz_secondary_functions_1.c
+../includes/asm.h
+/nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
+
 /nfs/2016/k/kzakharc/kz_corewar/src/kz_validation_1.c
 ../includes/asm.h
 /nfs/2016/k/kzakharc/kz_corewar/includes/asm.h

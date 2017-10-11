@@ -83,6 +83,9 @@ int 				check_param(t_file *tmp, int i);
 int 				find_name(t_file *tmp, int i);
 int 				find_char(char c, int i);
 int 				instruction_with_one_param(t_file *tmp, int i);
+int 				check_direct(t_file *tmp, int i, int q);
+int 				check_separator(t_file *tmp, int q, int i, char *s);
+int 				find_label(t_file *tmp);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 

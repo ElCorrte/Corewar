@@ -77,28 +77,8 @@ int 	instruction_with_one_param(t_file *tmp, int i)
 		return (print_usage(13, g_tab[i].name));
 	tmp->labels->str++;
 	if (g_tab[i].arg[0] == T_DIR)
-	{
-		if (*tmp->labels->str != DIRECT_CHAR)
-			return (print_usage_1(0, g_tab[i].name, 0, "indirect"));
-		tmp->labels->str++;
-		if (*tmp->labels->str == LABEL_CHAR || *tmp->labels->str == '-' ||
-				ft_isdigit(*tmp->labels->str))
-		{
-			if (*tmp->labels->str == LABEL_CHAR)
-			{
-				if (!(find_label()))
-					return (0);
-			}
-			else if (*tmp->labels->str == '-')
-				tmp->labels->str++;
-			else if (!(ft_isdigit(*tmp->labels->str)))
-				return (print_usage(4, "nope"));
-			else
-				return (1);
-		}
-		else
-			return (print_usage(4, "nope"));
-	}
+		return (check_direct(tmp, i, 1));
+
 }
 
 int 	find_name(t_file *tmp, int i)

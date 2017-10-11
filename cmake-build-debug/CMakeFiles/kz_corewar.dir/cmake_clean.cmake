@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/kz_corewar.dir/src/kz_check_param_of_instruction.c.o"
   "CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o"
   "CMakeFiles/kz_corewar.dir/src/kz_print_for_validation.c.o"
   "CMakeFiles/kz_corewar.dir/src/kz_record_files.c.o"

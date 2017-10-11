@@ -316,6 +316,9 @@
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/includes/op.h">
 			<Option target="kz_corewar"/>
 		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_check_param_of_instruction.c">
+			<Option target="kz_corewar"/>
+		</Unit>
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_main_asm.c">
 			<Option target="kz_corewar"/>
 		</Unit>

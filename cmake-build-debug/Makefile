@@ -2121,6 +2121,33 @@ Lib/src/libft/ft_toupper.c.s:
 	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_toupper.c.s
 .PHONY : Lib/src/libft/ft_toupper.c.s
 
+src/kz_check_param_of_instruction.o: src/kz_check_param_of_instruction.c.o
+
+.PHONY : src/kz_check_param_of_instruction.o
+
+# target to build an object file
+src/kz_check_param_of_instruction.c.o:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_check_param_of_instruction.c.o
+.PHONY : src/kz_check_param_of_instruction.c.o
+
+src/kz_check_param_of_instruction.i: src/kz_check_param_of_instruction.c.i
+
+.PHONY : src/kz_check_param_of_instruction.i
+
+# target to preprocess a source file
+src/kz_check_param_of_instruction.c.i:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_check_param_of_instruction.c.i
+.PHONY : src/kz_check_param_of_instruction.c.i
+
+src/kz_check_param_of_instruction.s: src/kz_check_param_of_instruction.c.s
+
+.PHONY : src/kz_check_param_of_instruction.s
+
+# target to generate assembly for a file
+src/kz_check_param_of_instruction.c.s:
+	$(MAKE) -f CMakeFiles/kz_corewar.dir/build.make CMakeFiles/kz_corewar.dir/src/kz_check_param_of_instruction.c.s
+.PHONY : src/kz_check_param_of_instruction.c.s
+
 src/kz_main_asm.o: src/kz_main_asm.c.o
 
 .PHONY : src/kz_main_asm.o
@@ -2568,6 +2595,9 @@ help:
 	@echo "... Lib/src/libft/ft_toupper.o"
 	@echo "... Lib/src/libft/ft_toupper.i"
 	@echo "... Lib/src/libft/ft_toupper.s"
+	@echo "... src/kz_check_param_of_instruction.o"
+	@echo "... src/kz_check_param_of_instruction.i"
+	@echo "... src/kz_check_param_of_instruction.s"
 	@echo "... src/kz_main_asm.o"
 	@echo "... src/kz_main_asm.i"
 	@echo "... src/kz_main_asm.s"
