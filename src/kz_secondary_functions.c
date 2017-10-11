@@ -23,6 +23,7 @@ void	lets_get_null(void)
 	g_asm.line = 1;
 	g_asm.l = 1;
 	g_asm.q = 0;
+	g_asm.p = 0;
 }
 
 void	lets_get_null_for_file(void)
@@ -33,6 +34,7 @@ void	lets_get_null_for_file(void)
 	g_asm.line = 1;
 	g_asm.l = 1;
 	g_asm.q = 0;
+	g_asm.p = 0;
 }
 
 int 	find_char(char c, int i)
@@ -46,46 +48,51 @@ int 	find_char(char c, int i)
 	return (0);
 }
 
-t_labels	*skip_blank_lines(t_file *tmp)
+t_labels	*skip_blank_lines(t_labels *tmp)
 {
-	while ((ft_isspace(*tmp->labels->str) || (*tmp->labels->str == '\0') ||
-			(*tmp->labels->str == COMMENT_CHAR) || *tmp->labels->str == ';') &&
-			(tmp->labels->next != NULL))
+	while ((ft_isspace(*tmp->str) || (*tmp->str == '\0') ||
+			(*tmp->str == COMMENT_CHAR) || *tmp->str == ';') &&
+			(tmp->next != NULL))
 	{
-		while (ft_isspace(*tmp->labels->str))
-			tmp->labels->str++;
-		if ((*tmp->labels->str == '\0' || *tmp->labels->str == COMMENT_CHAR ||
-				*tmp->labels->str == ';') && tmp->labels->next != NULL)
+		while (ft_isspace(*tmp->str))
+			tmp->str++;
+		if ((*tmp->str == '\0' || *tmp->str == COMMENT_CHAR ||
+				*tmp->str == ';') && tmp->next != NULL)
 		{
-			tmp->labels = tmp->labels->next;
+			tmp = tmp->next;
 			g_asm.l++;
 		}
 	}
-	if (tmp->labels->next == NULL)
+	if (tmp->next == NULL)
 	{
-		while (ft_isspace(*tmp->labels->str))
-			tmp->labels->str++;
-		if (*tmp->labels->str == COMMENT_CHAR || *tmp->labels->str == ';')
+		while (ft_isspace(*tmp->str))
+			tmp->str++;
+		if (*tmp->str == COMMENT_CHAR || *tmp->str == ';')
 		{
-			while (*tmp->labels->str)
-				tmp->labels->str++;
+			while (*tmp->str)
+				tmp->str++;
 		}
 	}
-	return (tmp->labels);
+	return (tmp);
 }
 
-int 		finaly_check_name_comm(t_file *tmp, int i, int n, int a)
+int 		finaly_check_name_comm(t_labels *tmp, int i, int n, int a)
 {
-	if (tmp->labels->str[i] == '"' && tmp->labels->str[n] == '\0')
+	t_file	*q;
+
+	q = g_file;
+	while (q->next != NULL)
+		q = q->next;
+	if (tmp->str[i] == '"' && tmp->str[n] == '\0')
 	{
 		if (a == 1)
-			tmp->name = ft_strnew((size_t)i);
+			q->name = ft_strnew((size_t)i);
 		else
-			tmp->comm = ft_strnew((size_t)i);
+			q->comm = ft_strnew((size_t)i);
 		if (a == 1)
-			tmp->name = ft_strncpy(tmp->name, tmp->labels->str, (size_t)i);
+			q->name = ft_strncpy(q->name, tmp->str, (size_t)i);
 		else
-			tmp->comm = ft_strncpy(tmp->comm, tmp->labels->str, (size_t)i);
+			q->comm = ft_strncpy(q->comm, tmp->str, (size_t)i);
 		return (1);
 	}
 	return (0);

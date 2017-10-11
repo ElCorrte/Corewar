@@ -234,6 +234,13 @@ CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_tolower.c.o: ../Lib/src/libft/libft.h
 CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_toupper.c.o: ../Lib/src/libft/ft_toupper.c
 CMakeFiles/kz_corewar.dir/Lib/src/libft/ft_toupper.c.o: ../Lib/src/libft/libft.h
 
+CMakeFiles/kz_corewar.dir/src/kz_check_param_of_instruction.c.o: ../Lib/src/ft_printf/ft_printf.h
+CMakeFiles/kz_corewar.dir/src/kz_check_param_of_instruction.c.o: ../Lib/src/get_next_line/get_next_line.h
+CMakeFiles/kz_corewar.dir/src/kz_check_param_of_instruction.c.o: ../Lib/src/libft/libft.h
+CMakeFiles/kz_corewar.dir/src/kz_check_param_of_instruction.c.o: ../includes/asm.h
+CMakeFiles/kz_corewar.dir/src/kz_check_param_of_instruction.c.o: ../includes/op.h
+CMakeFiles/kz_corewar.dir/src/kz_check_param_of_instruction.c.o: ../src/kz_check_param_of_instruction.c
+
 CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o: ../Lib/src/ft_printf/ft_printf.h
 CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o: ../Lib/src/get_next_line/get_next_line.h
 CMakeFiles/kz_corewar.dir/src/kz_main_asm.c.o: ../Lib/src/libft/libft.h

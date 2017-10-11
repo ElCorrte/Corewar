@@ -386,6 +386,10 @@ op.h
 
 /nfs/2016/k/kzakharc/kz_corewar/includes/op.h
 
+/nfs/2016/k/kzakharc/kz_corewar/src/kz_check_param_of_instruction.c
+../includes/asm.h
+/nfs/2016/k/kzakharc/kz_corewar/includes/asm.h
+
 /nfs/2016/k/kzakharc/kz_corewar/src/kz_main_asm.c
 ../includes/asm.h
 /nfs/2016/k/kzakharc/kz_corewar/includes/asm.h

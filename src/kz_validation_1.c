@@ -33,7 +33,7 @@ int 	g_validation(char *str)
 			return (print_usage(10, "Seek Error"));
 		while (get_next_line(g_asm.fd, &line) > 0)
 			record_labels(line);
-		if (c[0] != '\n' && (g_asm.q = looking_for_errors()) != 2)
+		if (((g_asm.q = looking_for_errors(g_file)) != 2) && c[0] != '\n')
 			return (print_usage(9, str));
 		else if (g_asm.q > 0)
 			return (1);
@@ -41,73 +41,73 @@ int 	g_validation(char *str)
 	return (0);
 }
 
-int 	looking_for_errors(void)
+int 	looking_for_errors(t_file *t)
 {
-	t_file	*tmp;
+	t_labels	*tmp;
 
-	tmp = g_file;
-	while (tmp->next != NULL)
-		tmp = tmp->next;
-	while (tmp->labels != NULL)
+	while (t->next != NULL)
+		t = t->next;
+	tmp = t->labels;
+	while (tmp != NULL)
 	{
-		tmp->labels = skip_blank_lines(tmp);
-		if (*tmp->labels->str == '\0' && tmp->labels->next == NULL)
+		tmp = skip_blank_lines(tmp);
+		if (tmp->str[g_asm.p] == '\0' && tmp->next == NULL)
 			return (2);
 		if (g_asm.line == 1 || g_asm.line == 2)
 			if (!(checkout_name_comm(tmp, 0)))
 				return (0);
-		if (g_asm.line > 2 && tmp->labels->str)
+		if (g_asm.line > 2 && tmp->str)
 			if (!(checkout_body(tmp, 0, 0)))
 				return (0);
-		tmp->labels = tmp->labels->next;
+		tmp = tmp->next;
 		g_asm.line++;
 		g_asm.l++;
 	}
-	if (ft_strlen(tmp->name) > 128)
+	if (ft_strlen(t->name) > 128)
 		return (print_usage(12, "Champion name too long (Max length 128)"));
-	if (ft_strlen(tmp->comm) > 2048)
+	if (ft_strlen(t->comm) > 2048)
 		return (print_usage(12, "Champion comment too long (Max length 2048)"));
 	return (1);
 }
 
-int		checkout_name_comm(t_file *tmp, int a)
+int		checkout_name_comm(t_labels *tmp, int a)
 {
-	tmp->labels = skip_blank_lines(tmp);
-	if (!(ft_strncmp(NAME_CMD_STRING, tmp->labels->str, 5)))
+	tmp = skip_blank_lines(tmp);
+	if (!(ft_strncmp(NAME_CMD_STRING, tmp->str, 5)))
 	{
-		tmp->labels->str += 5;
+		tmp->str += 5;
 		g_asm.f_name++;
 		a = 1;
 	}
-	else if (!(ft_strncmp(COMMENT_CMD_STRING, tmp->labels->str, 8)))
+	else if (!(ft_strncmp(COMMENT_CMD_STRING, tmp->str, 8)))
 	{
-		tmp->labels->str += 8;
+		tmp->str += 8;
 		g_asm.f_comment++;
 	}
 	else if (check_no_repit(tmp))
 		return (print_usage(3, "none"));
 	else
 		return (0);
-	while (ft_isspace(*tmp->labels->str))
-		tmp->labels->str++;
+	while (ft_isspace(*tmp->str))
+		tmp->str++;
 	if (check_no_repit(tmp))
 		return (check_comment(tmp, 0, a));
 	return (0);
 }
 
-int 	check_comment(t_file *tmp, int i, int a)
+int 	check_comment(t_labels *tmp, int i, int a)
 {
 	int		n;
 
-	if (*tmp->labels->str == '"')
+	if (*tmp->str == '"')
 	{
-		tmp->labels->str++;
-		while (tmp->labels->str[i] != '"' && tmp->labels->str[i] != '\0')
+		tmp->str++;
+		while (tmp->str[i] != '"' && tmp->str[i] != '\0')
 			i++;
-		if (tmp->labels->str[i] == '\0')
+		if (tmp->str[i] == '\0')
 			return (print_usage(11, "none"));
 		n = i + 1;
-		while (ft_isspace(tmp->labels->str[n]))
+		while (ft_isspace(tmp->str[n]))
 			n++;
 		if (finaly_check_name_comm(tmp, i, n, a))
 			return (1);
@@ -119,7 +119,7 @@ int 	check_comment(t_file *tmp, int i, int a)
 	return (0);
 }
 
-int 	check_no_repit(t_file *tmp)
+int 	check_no_repit(t_labels *tmp)
 {
 	if (g_asm.line == 2 && (g_asm.f_name == 0 || g_asm.f_comment == 0))
 	{
@@ -128,7 +128,7 @@ int 	check_no_repit(t_file *tmp)
 		else if ((g_asm.f_comment == 0) && (g_asm.f_name > 1))
 			print_usage(6, ".name");
 		else
-			print_usage(7, tmp->labels->str);
+			print_usage(7, tmp->str);
 		return (0);
 	}
 	return (1);

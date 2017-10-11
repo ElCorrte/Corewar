@@ -50,6 +50,7 @@ struct 				s_file
 typedef struct		s_asm
 {
 	int 			a;
+	int 			p;
 	int 			c;
 	int 			fd;
 	int 			f_name;
@@ -60,7 +61,7 @@ typedef struct		s_asm
 }					t_asm;
 
 t_asm				g_asm;
-t_file				*g_file;
+extern t_file				*g_file;
 t_op				g_tab[17];
 
 int					print_usage(int i, char *s);
@@ -72,20 +73,20 @@ t_file				*record_file(char *str, int y);
 void				record_labels(char *line);
 void				add_file(t_file *file, char *str);
 void				add_label(char *line, t_labels *labels);
-int 				looking_for_errors(void);
-int 				checkout_name_comm(t_file *tmp, int a);
-int 				check_comment(t_file *tmp, int i, int a);
-int 				check_no_repit(t_file *tmp);
-t_labels			*skip_blank_lines(t_file *tmp);
-int 				finaly_check_name_comm(t_file *tmp, int i, int n, int a);
-int 				checkout_body(t_file *tmp, int a, int i);
-int 				check_param(t_file *tmp, int i);
-int 				find_name(t_file *tmp, int i);
+int 				looking_for_errors(t_file *t);
+int 				checkout_name_comm(t_labels *tmp, int a);
+int 				check_comment(t_labels *tmp, int i, int a);
+int 				check_no_repit(t_labels *tmp);
+t_labels			*skip_blank_lines(t_labels *tmp);
+int 				finaly_check_name_comm(t_labels *tmp, int i, int n, int a);
+int 				checkout_body(t_labels *tmp, int a, int i);
+int 				check_param(t_labels *tmp, int i);
+int 				find_name(t_labels *tmp, int i);
 int 				find_char(char c, int i);
-int 				instruction_with_one_param(t_file *tmp, int i);
-int 				check_direct(t_file *tmp, int i, int q);
-int 				check_separator(t_file *tmp, int q, int i, char *s);
-int 				find_label(t_file *tmp);
+int 				instruction_with_one_param(t_labels *tmp, int i);
+int 				check_direct(t_labels *tmp, int i, int q);
+int 				check_separator(t_labels *tmp, int q, int i, char *s);
+int 				find_label(t_labels *tmp, t_file *t);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 
