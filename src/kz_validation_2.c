@@ -17,17 +17,17 @@ int 	checkout_body(t_labels *tmp, int a, int i)
 	i = find_name(tmp, 15);
 	if (i == -1)
 	{
-		while (*tmp->str != LABEL_CHAR &&
-				!(ft_isspace(*tmp->str)))
+		while (tmp->str[g_asm.p] != LABEL_CHAR &&
+				!(ft_isspace(tmp->str[g_asm.p])))
 		{
-			if (!find_char(*tmp->str, 0))
+			if (!find_char(tmp->str[g_asm.p], 0))
 				return (print_usage(4, "nope"));
-			tmp->str++;
+			g_asm.p++;
 		}
-		(*tmp->str != LABEL_CHAR) ? i = -2 : 0;
-		tmp->str++;
-		while (ft_isspace(*tmp->str))
-			tmp->str++;
+		(tmp->str[g_asm.p] != LABEL_CHAR) ? i = -2 : 0;
+		g_asm.p++;
+		while (ft_isspace(tmp->str[g_asm.p]))
+			g_asm.p++;
 		a = find_name(tmp, 15);
 		if (a == -1)
 			return (print_usage(8, "nope"));
@@ -43,7 +43,7 @@ int 	checkout_body(t_labels *tmp, int a, int i)
 
 int 	check_param(t_labels *tmp, int i)
 {
-	tmp->str += ft_strlen(g_tab[i].name);
+	g_asm.p += ft_strlen(g_tab[i].name);
 	if ((i == 0) || (i == 8) || (i == 11) || (i == 14) || (i == 15))
 		if (!(instruction_with_one_param(tmp, i)))
 			return (0);
@@ -73,9 +73,9 @@ int 	check_param(t_labels *tmp, int i)
 
 int 	instruction_with_one_param(t_labels *tmp, int i)
 {
-	if (!(ft_isspace(*tmp->str)))
+	if (!(ft_isspace(tmp->str[g_asm.p])))
 		return (print_usage(13, g_tab[i].name));
-	tmp->str++;
+	g_asm.p++;
 	if (g_tab[i].arg[0] == T_DIR)
 		return (check_direct(tmp, i, 1));
 	return (1);
@@ -83,10 +83,13 @@ int 	instruction_with_one_param(t_labels *tmp, int i)
 
 int 	find_name(t_labels *tmp, int i)
 {
+	char	*t;
+
+	t = tmp->str;
+	t += g_asm.p;
 	while (i >= 0)
 	{
-		if (!(ft_strncmp(g_tab[i].name, tmp->str,
-						 ft_strlen(g_tab[i].name))))
+		if (!(ft_strncmp(g_tab[i].name, t, ft_strlen(g_tab[i].name))))
 			return (i);
 		i--;
 	}

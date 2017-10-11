@@ -48,7 +48,7 @@ int 	find_char(char c, int i)
 	return (0);
 }
 
-t_labels	*skip_blank_lines(t_labels *tmp)
+t_labels	*skip_blank_lines(t_labels *tmp, int f)
 {
 	while ((ft_isspace(*tmp->str) || (*tmp->str == '\0') ||
 			(*tmp->str == COMMENT_CHAR) || *tmp->str == ';') &&
@@ -60,7 +60,7 @@ t_labels	*skip_blank_lines(t_labels *tmp)
 				*tmp->str == ';') && tmp->next != NULL)
 		{
 			tmp = tmp->next;
-			g_asm.l++;
+			(f > 0) ? g_asm.l++ : 0;
 		}
 	}
 	if (tmp->next == NULL)
@@ -90,9 +90,15 @@ int 		finaly_check_name_comm(t_labels *tmp, int i, int n, int a)
 		else
 			q->comm = ft_strnew((size_t)i);
 		if (a == 1)
-			q->name = ft_strncpy(q->name, tmp->str, (size_t)i);
+		{
+			q->name = ft_strncpy(q->name, tmp->str, (size_t) i);
+			q->name += g_asm.p;
+		}
 		else
-			q->comm = ft_strncpy(q->comm, tmp->str, (size_t)i);
+		{
+			q->comm = ft_strncpy(q->comm, tmp->str, (size_t) i);
+			q->comm += g_asm.p;
+		}
 		return (1);
 	}
 	return (0);

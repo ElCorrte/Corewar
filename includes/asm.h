@@ -60,8 +60,8 @@ typedef struct		s_asm
 	int				q;
 }					t_asm;
 
-t_asm				g_asm;
-extern t_file				*g_file;
+extern t_asm		g_asm;
+extern t_file		*g_file;
 t_op				g_tab[17];
 
 int					print_usage(int i, char *s);
@@ -77,7 +77,7 @@ int 				looking_for_errors(t_file *t);
 int 				checkout_name_comm(t_labels *tmp, int a);
 int 				check_comment(t_labels *tmp, int i, int a);
 int 				check_no_repit(t_labels *tmp);
-t_labels			*skip_blank_lines(t_labels *tmp);
+t_labels			*skip_blank_lines(t_labels *tmp, int f);
 int 				finaly_check_name_comm(t_labels *tmp, int i, int n, int a);
 int 				checkout_body(t_labels *tmp, int a, int i);
 int 				check_param(t_labels *tmp, int i);
@@ -86,7 +86,7 @@ int 				find_char(char c, int i);
 int 				instruction_with_one_param(t_labels *tmp, int i);
 int 				check_direct(t_labels *tmp, int i, int q);
 int 				check_separator(t_labels *tmp, int q, int i, char *s);
-int 				find_label(t_labels *tmp, t_file *t);
+int 				find_label(t_labels *tmp, t_file *t, int i);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 

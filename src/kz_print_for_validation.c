@@ -52,6 +52,7 @@ int 	print_usage_1(int i, char *s, int param, char *p)
 	(ft_printf(MAG "Syntax error at token '%c', "
 					   "ENDLINE\n" RESET, SEPARATOR_CHAR)) : 0;
 	(i == 3) ?
-	(ft_printf(BMAG BLA "No such label, line [%03d]" RESET, g_asm.l)) : 0;
+	(ft_printf(BMAG BLA "Label does not exist, line [%03d], instruction <%s>\n"
+					   RESET, g_asm.l, s)) : 0;
 	return (0);
 }

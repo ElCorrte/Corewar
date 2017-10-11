@@ -50,13 +50,14 @@ int 	looking_for_errors(t_file *t)
 	tmp = t->labels;
 	while (tmp != NULL)
 	{
-		tmp = skip_blank_lines(tmp);
+		g_asm.p = 0;
+		tmp = skip_blank_lines(tmp, 1);
 		if (tmp->str[g_asm.p] == '\0' && tmp->next == NULL)
 			return (2);
 		if (g_asm.line == 1 || g_asm.line == 2)
 			if (!(checkout_name_comm(tmp, 0)))
 				return (0);
-		if (g_asm.line > 2 && tmp->str)
+		if (g_asm.line > 2 && tmp->str[g_asm.p])
 			if (!(checkout_body(tmp, 0, 0)))
 				return (0);
 		tmp = tmp->next;
@@ -72,24 +73,24 @@ int 	looking_for_errors(t_file *t)
 
 int		checkout_name_comm(t_labels *tmp, int a)
 {
-	tmp = skip_blank_lines(tmp);
+	tmp = skip_blank_lines(tmp, 1);
 	if (!(ft_strncmp(NAME_CMD_STRING, tmp->str, 5)))
 	{
-		tmp->str += 5;
+		g_asm.p += 5;
 		g_asm.f_name++;
 		a = 1;
 	}
 	else if (!(ft_strncmp(COMMENT_CMD_STRING, tmp->str, 8)))
 	{
-		tmp->str += 8;
+		g_asm.p += 8;
 		g_asm.f_comment++;
 	}
 	else if (check_no_repit(tmp))
 		return (print_usage(3, "none"));
 	else
 		return (0);
-	while (ft_isspace(*tmp->str))
-		tmp->str++;
+	while (ft_isspace(tmp->str[g_asm.p]))
+		g_asm.p++;
 	if (check_no_repit(tmp))
 		return (check_comment(tmp, 0, a));
 	return (0);
@@ -99,17 +100,17 @@ int 	check_comment(t_labels *tmp, int i, int a)
 {
 	int		n;
 
-	if (*tmp->str == '"')
+	if (tmp->str[g_asm.p] == '"')
 	{
-		tmp->str++;
-		while (tmp->str[i] != '"' && tmp->str[i] != '\0')
+		g_asm.p++;
+		while (tmp->str[g_asm.p + i] != '"' && tmp->str[g_asm.p + i] != '\0')
 			i++;
-		if (tmp->str[i] == '\0')
+		if (tmp->str[g_asm.p + i] == '\0')
 			return (print_usage(11, "none"));
-		n = i + 1;
+		n = g_asm.p + i + 1;
 		while (ft_isspace(tmp->str[n]))
 			n++;
-		if (finaly_check_name_comm(tmp, i, n, a))
+		if (finaly_check_name_comm(tmp, g_asm.p + i, n, a))
 			return (1);
 		else
 			print_usage(11, "none");
