@@ -13,13 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="57c6c6c3-1e58-4981-a864-6ef0ca36d3a9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/asm.h" afterPath="$PROJECT_DIR$/includes/asm.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_check_param_of_instruction.c" afterPath="$PROJECT_DIR$/src/kz_check_param_of_instruction.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_print_for_validation.c" afterPath="$PROJECT_DIR$/src/kz_print_for_validation.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_secondary_functions.c" afterPath="$PROJECT_DIR$/src/kz_secondary_functions.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_secondary_functions_1.c" afterPath="$PROJECT_DIR$/src/kz_secondary_functions_1.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_validation_1.c" afterPath="$PROJECT_DIR$/src/kz_validation_1.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_validation_2.c" afterPath="$PROJECT_DIR$/src/kz_validation_2.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -502,7 +495,7 @@
       <workItem from="1507715197866" duration="22214000" />
       <workItem from="1507799164837" duration="78000" />
       <workItem from="1507799522661" duration="7803000" />
-      <workItem from="1507814083061" duration="6876000" />
+      <workItem from="1507814083061" duration="7223000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1502801635930</created>
@@ -658,11 +651,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507745571487</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="validation almost...">
+      <created>1507824539022</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1507824539022</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196762000" />
+    <option name="totallyTimeSpent" value="197109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -710,7 +710,8 @@
     <MESSAGE value="start validation of parameters_0" />
     <MESSAGE value="wtf" />
     <MESSAGE value="ura" />
-    <option name="LAST_COMMIT_MESSAGE" value="ura" />
+    <MESSAGE value="validation almost..." />
+    <option name="LAST_COMMIT_MESSAGE" value="validation almost..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
