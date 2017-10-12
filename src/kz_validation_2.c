@@ -41,6 +41,34 @@ int 	checkout_body(t_labels *tmp, int a, int i)
 	return (1);
 }
 
+int 	check_all_labels(int p)
+{
+	t_labels	*tmp;
+
+	tmp = leaf_list(g_file);
+	while (tmp != NULL)
+	{
+		tmp = skip_blank_lines(tmp, -3);
+		if (tmp->str[0] == '\0' && tmp->next == NULL)
+			break ;
+		if (find_name(tmp, 15) == -1)
+		{
+			while (tmp->str[p] != LABEL_CHAR &&
+				   !(ft_isspace(tmp->str[p])))
+			{
+				if (!find_char(tmp->str[p], 0))
+					return (print_usage_0(0));
+				p++;
+			}
+			if (tmp->str[p] != LABEL_CHAR)
+				return (print_usage_0(1));
+		}
+		tmp = tmp->next;
+		g_asm.count++;
+	}
+	return (1);
+}
+
 int 	check_param(t_labels *tmp, int i)
 {
 	g_asm.p += ft_strlen(g_tab[i].name);
@@ -77,20 +105,28 @@ int 	instruction_with_one_param(t_labels *tmp, int i)
 		return (print_usage(13, g_tab[i].name));
 	g_asm.p++;
 	if (g_tab[i].arg[0] == T_DIR)
-		return (check_direct(tmp, i, 1));
+		return (check_direct(tmp, i, 1, -1));
 	return (1);
 }
 
 int 	find_name(t_labels *tmp, int i)
 {
 	char	*t;
+	int 	d;
 
 	t = tmp->str;
 	t += g_asm.p;
 	while (i >= 0)
 	{
+		d = g_asm.p;
+		d += ft_strlen(g_tab[i].name);
 		if (!(ft_strncmp(g_tab[i].name, t, ft_strlen(g_tab[i].name))))
-			return (i);
+		{
+			while (ft_isspace(tmp->str[d]))
+				d++;
+			if (tmp->str[d] != LABEL_CHAR)
+				return (i);
+		}
 		i--;
 	}
 	return (-1);

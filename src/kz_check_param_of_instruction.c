@@ -12,9 +12,9 @@
 
 #include "../includes/asm.h"
 
-int		check_direct(t_labels *tmp, int i, int q)
+int		check_direct(t_labels *tmp, int i, int q, int last)
 {
-
+	g_asm.last = last;
 	if (tmp->str[g_asm.p] != DIRECT_CHAR)
 		return (print_usage_1(0, g_tab[i].name, q, "indirect"));
 	g_asm.p++;
@@ -44,22 +44,23 @@ int		check_direct(t_labels *tmp, int i, int q)
 
 int 	check_separator(t_labels *tmp, int q, int i, char *s)
 {
-	if (tmp->str[g_asm.p] == SEPARATOR_CHAR && q < 3)
+	if (tmp->str[g_asm.p] == SEPARATOR_CHAR && g_asm.last != -1)
 		return (1);
-	if (tmp->str[g_asm.p] == SEPARATOR_CHAR && q == 3)
+	if (tmp->str[g_asm.p] == SEPARATOR_CHAR && g_asm.last == -1)
 		return (print_usage_1(2, g_tab[i].name, q, "nope"));
-	if (ft_isspace(tmp->str[g_asm.p]) && q != 3)
+	if (ft_isspace(tmp->str[g_asm.p]) && g_asm.last != -1)
 		return (print_usage_1(1, g_tab[i].name, q, s));
-	if (ft_isspace(tmp->str[g_asm.p]) && q == 3)
+	if (ft_isspace(tmp->str[g_asm.p]) && g_asm.last == -1)
 	{
 		while (ft_isspace(tmp->str[g_asm.p]) && tmp->str[g_asm.p] != '\0')
 			g_asm.p++;
-		if (tmp->str[g_asm.p] != '\0')
+		if (tmp->str[g_asm.p] != '\0' && tmp->str[g_asm.p] != COMMENT_CHAR  &&
+				tmp->str[g_asm.p] != ';')
 			return (print_usage(11, "nope"));
 		else
 			return (1);
 	}
-	if (tmp->str[g_asm.p] == '\0' && q == 3)
+	if (tmp->str[g_asm.p] == '\0' && g_asm.last == -1)
 		return (1);
 	return (0);
 }
@@ -80,10 +81,11 @@ int 	find_label(t_labels *tmp, t_file *t, int i)
 		c++;
 	str = tmp->str;
 	str += g_asm.p;
+	g_asm.p += c;
 	while (fn != NULL)
 	{
 		skip_blank_lines(fn, -1);
-		if (!(ft_strncmp(str, fn->str, c)))
+		if (!(ft_strncmp(str, fn->str, c)) && fn->str[c] == LABEL_CHAR)
 			return (1);
 		fn = fn->next;
 	}

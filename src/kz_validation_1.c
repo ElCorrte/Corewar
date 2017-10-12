@@ -33,7 +33,7 @@ int 	g_validation(char *str)
 			return (print_usage(10, "Seek Error"));
 		while (get_next_line(g_asm.fd, &line) > 0)
 			record_labels(line);
-		if (((g_asm.q = looking_for_errors(g_file)) != 2) && c[0] != '\n')
+		if (((g_asm.q = looking_for_errors(g_file)) == 1) && c[0] != '\n')
 			return (print_usage(9, str));
 		else if (g_asm.q > 0)
 			return (1);
@@ -58,8 +58,13 @@ int 	looking_for_errors(t_file *t)
 			if (!(checkout_name_comm(tmp, 0)))
 				return (0);
 		if (g_asm.line > 2 && tmp->str[g_asm.p])
+		{
+			if (g_asm.line == 3)
+				if (!(check_all_labels(g_asm.p)))
+					return (0);
 			if (!(checkout_body(tmp, 0, 0)))
 				return (0);
+		}
 		tmp = tmp->next;
 		g_asm.line++;
 		g_asm.l++;

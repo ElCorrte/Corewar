@@ -58,6 +58,8 @@ typedef struct		s_asm
 	int 			line;
 	int 			l;
 	int				q;
+	int 			last;
+	int 			count;
 }					t_asm;
 
 extern t_asm		g_asm;
@@ -66,6 +68,7 @@ t_op				g_tab[17];
 
 int					print_usage(int i, char *s);
 int					print_usage_1(int i, char *s, int param, char *p);
+int					print_usage_0(int i);
 void				lets_get_null(void);
 void				lets_get_null_for_file(void);
 int 				g_validation(char *str);
@@ -84,9 +87,11 @@ int 				check_param(t_labels *tmp, int i);
 int 				find_name(t_labels *tmp, int i);
 int 				find_char(char c, int i);
 int 				instruction_with_one_param(t_labels *tmp, int i);
-int 				check_direct(t_labels *tmp, int i, int q);
+int 				check_direct(t_labels *tmp, int i, int q, int last);
 int 				check_separator(t_labels *tmp, int q, int i, char *s);
 int 				find_label(t_labels *tmp, t_file *t, int i);
+int 				check_all_labels(int p);
+t_labels			*leaf_list(t_file *t);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 

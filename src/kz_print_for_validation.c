@@ -41,6 +41,16 @@ int		print_usage(int i, char *s)
 	return (0);
 }
 
+int		print_usage_0(int i)
+{
+	(i == 0) ?
+	(ft_printf(YEL "Lexical error at line [%03d]\n" RESET, g_asm.count)) : 0;
+	(i == 1) ?
+	(ft_printf(MAG "Syntax error at line [%03d], "
+					   "LABEL\n" RESET, g_asm.count)) : 0;
+	return (0);
+}
+
 int 	print_usage_1(int i, char *s, int param, char *p)
 {
 	(i == 0) ? (ft_printf(BRED "Invalid parameter %d type %s for instruction "

@@ -24,6 +24,8 @@ void	lets_get_null(void)
 	g_asm.l = 1;
 	g_asm.q = 0;
 	g_asm.p = 0;
+	g_asm.last = 0;
+	g_asm.count = 0;
 }
 
 void	lets_get_null_for_file(void)
@@ -35,6 +37,8 @@ void	lets_get_null_for_file(void)
 	g_asm.l = 1;
 	g_asm.q = 0;
 	g_asm.p = 0;
+	g_asm.last = 0;
+	g_asm.count = 0;
 }
 
 int 	find_char(char c, int i)
@@ -61,6 +65,7 @@ t_labels	*skip_blank_lines(t_labels *tmp, int f)
 		{
 			tmp = tmp->next;
 			(f > 0) ? g_asm.l++ : 0;
+			(f == -3) ? g_asm.count++ : 0;
 		}
 	}
 	if (tmp->next == NULL)
