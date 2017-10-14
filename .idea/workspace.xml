@@ -12,29 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c6c6c3-1e58-4981-a864-6ef0ca36d3a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz_secondary_functions_2.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz_validation_for_param.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/C.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/kz_corewar.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/kz_corewar.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/kz_corewar.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/asm.h" afterPath="$PROJECT_DIR$/includes/asm.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_check_param_of_instruction.c" afterPath="$PROJECT_DIR$/src/kz_check_param_of_instruction.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_main_asm.c" afterPath="$PROJECT_DIR$/src/kz_main_asm.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_print_for_validation.c" afterPath="$PROJECT_DIR$/src/kz_print_for_validation.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_secondary_functions_1.c" afterPath="$PROJECT_DIR$/src/kz_secondary_functions_1.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_validation_1.c" afterPath="$PROJECT_DIR$/src/kz_validation_1.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz_validation_2.c" afterPath="$PROJECT_DIR$/src/kz_validation_2.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,8 +53,8 @@
                   <file leaf-file-name="kz_check_param_of_instruction.c" pinned="false" current-in-tab="true">
                     <entry file="file://$PROJECT_DIR$/src/kz_check_param_of_instruction.c">
                       <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="504">
-                          <caret line="59" column="69" lean-forward="false" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
+                        <state relative-caret-position="639">
+                          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
                           <folding />
                         </state>
                       </provider>
@@ -535,7 +513,7 @@
       <workItem from="1507799164837" duration="78000" />
       <workItem from="1507799522661" duration="7803000" />
       <workItem from="1507814083061" duration="7584000" />
-      <workItem from="1507977876887" duration="17415000" />
+      <workItem from="1507977876887" duration="17490000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1502801635930</created>
@@ -705,11 +683,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507824803974</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="validation already">
+      <created>1508004559228</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1508004559228</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214885000" />
+    <option name="totallyTimeSpent" value="214960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -758,7 +743,8 @@
     <MESSAGE value="wtf" />
     <MESSAGE value="ura" />
     <MESSAGE value="validation almost..." />
-    <option name="LAST_COMMIT_MESSAGE" value="validation almost..." />
+    <MESSAGE value="validation already" />
+    <option name="LAST_COMMIT_MESSAGE" value="validation already" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1176,8 +1162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kz_check_param_of_instruction.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="59" column="69" lean-forward="false" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
+        <state relative-caret-position="639">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
