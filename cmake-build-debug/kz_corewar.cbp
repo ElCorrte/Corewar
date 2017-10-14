@@ -334,10 +334,16 @@
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_secondary_functions_1.c">
 			<Option target="kz_corewar"/>
 		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_secondary_functions_2.c">
+			<Option target="kz_corewar"/>
+		</Unit>
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_validation_1.c">
 			<Option target="kz_corewar"/>
 		</Unit>
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_validation_2.c">
+			<Option target="kz_corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/kz_validation_for_param.c">
 			<Option target="kz_corewar"/>
 		</Unit>
 		<Unit filename="/nfs/2016/k/kzakharc/kz_corewar/src/op.c">

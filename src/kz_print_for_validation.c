@@ -14,6 +14,7 @@
 
 int		print_usage(int i, char *s)
 {
+	((i == 1) || (i == 2)) ? 0 : ft_printf("%s:  ", usage());
 	(i == 0) ? (ft_printf("Usage: ./asm [-a] <sourcefile.s>\n\t-a : Instead of "
 			"creating a .cor file, outputs a stripped and annotated version "
 								  "of the code to the standard output\n")) : 0;
@@ -43,26 +44,31 @@ int		print_usage(int i, char *s)
 
 int		print_usage_0(int i)
 {
+	ft_printf("%s:  ", usage());
 	(i == 0) ?
 	(ft_printf(YEL "Lexical error at line [%03d]\n" RESET, g_asm.count)) : 0;
 	(i == 1) ?
 	(ft_printf(MAG "Syntax error at line [%03d], "
 					   "LABEL\n" RESET, g_asm.count)) : 0;
+	(i == 2) ? (ft_printf(MAG "Syntax error. END \"(null)\"\n" RESET)) : 0;
 	return (0);
 }
 
 int 	print_usage_1(int i, char *s, int param, char *p)
 {
-	(i == 0) ? (ft_printf(BRED "Invalid parameter %d type %s for instruction "
+	ft_printf("%s:  ", usage());
+	(i == 0) ? (ft_printf(RED "Invalid parameter %d type %s for instruction "
 								  "%s\n" RESET, param, p, s)) : 0;
 	(i == 1) ?
 	(ft_printf(MAG "Syntax error, no separator after parameter %d type %s for "
 					   "instruction '%s'\n" RESET, param, p, s)) : 0;
 	(i == 2) ?
-	(ft_printf(MAG "Syntax error at token '%c', "
+	(ft_printf(MAG "Syntax error at token '%c' "
 					   "ENDLINE\n" RESET, SEPARATOR_CHAR)) : 0;
 	(i == 3) ?
 	(ft_printf(BMAG BLA "Label does not exist, line [%03d], instruction <%s>\n"
 					   RESET, g_asm.l, s)) : 0;
+	(i == 4) ? (ft_printf(RED "Invalid parameter %d type for instruction "
+								  "%s\n" RESET, param,  s)) : 0;
 	return (0);
 }

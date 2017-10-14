@@ -92,6 +92,19 @@ int 				check_separator(t_labels *tmp, int q, int i, char *s);
 int 				find_label(t_labels *tmp, t_file *t, int i);
 int 				check_all_labels(int p);
 t_labels			*leaf_list(t_file *t);
+int 				check_registry(t_labels *tmp, int i, int q, int last);
+int 				check_indirect(t_labels *tmp, int i, int q, int last);
+int 				instruction_with_three_param1_1_1(t_labels *tmp, int i);
+int 				instruction_with_three_param3_3_1(t_labels *tmp, int i);
+int 				instruction_with_two_param2_1(t_labels *tmp, int i, int n);
+int 				instruction_with_three_param3_2_1(t_labels *tmp, int i);
+int 				instruction_with_three_param1_3_2(t_labels *tmp, int i);
+void				skip_separator_between_param(t_labels *tmp);
+int 				check_three(t_labels *tmp, int i, int number);
+int 				check_two(t_labels *tmp, int i, int hm, int number);
+int 				check_two_1(t_labels *tmp, int i, int hm, int number);
+int 				is_it_label(t_labels *tmp, int i);
+char 				*usage(void);
 /*void				print_with_a(char *str);
 void				creat_file(char *str);*/
 

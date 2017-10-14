@@ -26,3 +26,65 @@ t_labels	*leaf_list(t_file *t)
 	return (tmp);
 }
 
+void		skip_separator_between_param(t_labels *tmp)
+{
+	if (tmp->str[g_asm.p] == SEPARATOR_CHAR)
+		g_asm.p++;
+	while (ft_isspace(tmp->str[g_asm.p]))
+		g_asm.p++;
+}
+
+int 		check_three(t_labels *tmp, int i, int number)
+{
+	if (tmp->str[g_asm.p] == DIRECT_CHAR)
+		return (check_direct(tmp, i, number, 1));
+	else if (tmp->str[g_asm.p] == 'r')
+		return (check_registry(tmp, i, number, 1));
+	else if (tmp->str[g_asm.p] == LABEL_CHAR || tmp->str[g_asm.p] == '-' ||
+				ft_isdigit(tmp->str[g_asm.p]))
+		return (check_indirect(tmp, i, number, 1));
+	return (print_usage_1(4, g_tab[i].name, number, "nope"));
+}
+
+int 		check_two(t_labels *tmp, int i, int hm, int number)
+{
+	if (hm == 2)
+	{
+		if (tmp->str[g_asm.p] == DIRECT_CHAR)
+			return (check_direct(tmp, i, number, 1));
+		else if (tmp->str[g_asm.p] == LABEL_CHAR || tmp->str[g_asm.p] == '-' ||
+				 ft_isdigit(tmp->str[g_asm.p]))
+			return (check_indirect(tmp, i, number, 1));
+	}
+	if (hm == 20)
+	{
+		if (tmp->str[g_asm.p] == DIRECT_CHAR)
+			return (check_direct(tmp, i, number, -1));
+		else if (tmp->str[g_asm.p] == LABEL_CHAR || tmp->str[g_asm.p] == '-' ||
+				 ft_isdigit(tmp->str[g_asm.p]))
+			return (check_indirect(tmp, i, number, -1));
+	}
+	return (print_usage_1(4, g_tab[i].name, number, "nope"));
+}
+
+int 		check_two_1(t_labels *tmp, int i, int hm, int number)
+{
+	if (hm == 2)
+	{
+		if (tmp->str[g_asm.p] == DIRECT_CHAR)
+			return (check_direct(tmp, i, number, 1));
+		else if (tmp->str[g_asm.p] == 'r')
+			return (check_registry(tmp, i, 2, 1));
+	}
+	if (hm == 20)
+	{
+		if (tmp->str[g_asm.p] == DIRECT_CHAR)
+			return (check_direct(tmp, i, number, -1));
+		else if (tmp->str[g_asm.p] == 'r')
+			return (check_registry(tmp, i, 2, -1));
+	}
+	return (print_usage_1(4, g_tab[i].name, number, "nope"));
+}
+
+
+

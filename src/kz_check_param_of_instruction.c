@@ -16,8 +16,60 @@ int		check_direct(t_labels *tmp, int i, int q, int last)
 {
 	g_asm.last = last;
 	if (tmp->str[g_asm.p] != DIRECT_CHAR)
-		return (print_usage_1(0, g_tab[i].name, q, "indirect"));
+		return (print_usage_1(0, g_tab[i].name, q, "direct"));
 	g_asm.p++;
+	if (tmp->str[g_asm.p] == LABEL_CHAR || tmp->str[g_asm.p] == '-' ||
+		ft_isdigit(tmp->str[g_asm.p]))
+	{
+		if (tmp->str[g_asm.p] == LABEL_CHAR)
+		{
+			if (find_label(tmp, g_file, i))
+				return (check_separator(tmp, q, i, "direct"));
+			return (0);
+		}
+		if (tmp->str[g_asm.p] == '-')
+			g_asm.p++;
+		while ((tmp->str[g_asm.p] != SEPARATOR_CHAR) &&
+				!(ft_isspace(tmp->str[g_asm.p])) && (tmp->str[g_asm.p] != '\0'))
+		{
+			if (!(ft_isdigit(tmp->str[g_asm.p])))
+				return (print_usage(4, "nope"));
+			g_asm.p++;
+		}
+		return (check_separator(tmp, q, i, "direct"));
+	}
+	else
+		return (print_usage(4, "nope"));
+}
+
+int		check_registry(t_labels *tmp, int i, int q, int last)
+{
+	char	*str;
+
+	g_asm.last = last;
+	str = ft_strdup(tmp->str);
+	if (tmp->str[g_asm.p] != 'r')
+		return (print_usage_1(0, g_tab[i].name, q, "registry"));
+	g_asm.p++;
+	if (ft_isdigit(tmp->str[g_asm.p]))
+	{
+		str += g_asm.p;
+		while ((tmp->str[g_asm.p] != SEPARATOR_CHAR) &&
+			   !(ft_isspace(tmp->str[g_asm.p])) && (tmp->str[g_asm.p] != '\0'))
+		{
+			if (!(ft_isdigit(tmp->str[g_asm.p])) || (ft_atoi(str) < 0) ||
+					(ft_atoi(str) > REG_NUMBER))
+				return (print_usage(11, "nope"));
+			g_asm.p++;
+		}
+		return (check_separator(tmp, q, i, "registry"));
+	}
+	return (print_usage(11, "nope"));
+}
+
+int 	check_indirect(t_labels *tmp, int i, int q, int last)
+{
+	g_asm.last = last;
 	if (tmp->str[g_asm.p] == LABEL_CHAR || tmp->str[g_asm.p] == '-' ||
 		ft_isdigit(tmp->str[g_asm.p]))
 	{
@@ -30,7 +82,7 @@ int		check_direct(t_labels *tmp, int i, int q, int last)
 		if (tmp->str[g_asm.p] == '-')
 			g_asm.p++;
 		while ((tmp->str[g_asm.p] != SEPARATOR_CHAR) &&
-				!(ft_isspace(tmp->str[g_asm.p])) && (tmp->str[g_asm.p] != '\0'))
+			   !(ft_isspace(tmp->str[g_asm.p])) && (tmp->str[g_asm.p] != '\0'))
 		{
 			if (!(ft_isdigit(tmp->str[g_asm.p])))
 				return (print_usage(4, "nope"));

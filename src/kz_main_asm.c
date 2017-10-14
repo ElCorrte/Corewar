@@ -30,7 +30,8 @@ int 	main(int argc, char **argv)
 		{
 			lets_get_null_for_file();
 			if (g_validation(argv[i]))
-				g_asm.a = 1; /*? print_with_a(argv[i]) : creat_file(argv[i]);*/
+				print_usage(1, argv[i]);
+				/*g_asm.a = 1; *//*? print_with_a(argv[i]) : creat_file(argv[i]);*/
 		}
 	}
 	return (0);

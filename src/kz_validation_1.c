@@ -23,7 +23,10 @@ int 	g_validation(char *str)
 	{
 		y++;
 		if ((g_asm.fd = open(str, O_RDONLY)) == -1)
+		{
+			y--;
 			return (print_usage(2, str));
+		}
 		g_file = record_file(str, y);
 		if (lseek(g_asm.fd, -1, SEEK_END) < 0)
 			return (print_usage(10, "Seek Error"));
@@ -69,6 +72,8 @@ int 	looking_for_errors(t_file *t)
 		g_asm.line++;
 		g_asm.l++;
 	}
+	if (g_asm.line == 3)
+		return (print_usage_0(2));
 	if (ft_strlen(t->name) > 128)
 		return (print_usage(12, "Champion name too long (Max length 128)"));
 	if (ft_strlen(t->comm) > 2048)
