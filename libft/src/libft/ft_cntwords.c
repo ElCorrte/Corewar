@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_cntwords.c                                      :+:      :+:    :+:   */
+/*   ft_countwords.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpoltave <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/30 14:48:29 by vpoltave          #+#    #+#             */
-/*   Updated: 2016/12/05 15:13:42 by vpoltave         ###   ########.fr       */
+/*   Created: 2016/12/05 15:17:39 by kzakharc          #+#    #+#             */
+/*   Updated: 2016/12/12 19:21:15 by kzakharc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t		ft_cntwords(char const *s, char c)
+int		ft_cntwords(char const *str, char c)
 {
-	size_t i;
-	size_t n;
+	int count;
+	int i;
 
 	i = 0;
-	n = 0;
-	while (s[i] == c && s[i])
-		i++;
-	while (s[i])
+	count = 0;
+	if (str == 0)
+		return (0);
+	while (str[count] == c)
+		count++;
+	while (str[count])
 	{
-		while (s[i] != c && s[i])
-			i++;
-		n++;
-		while (s[i] == c && s[i])
-			i++;
+		while (str[count] != c && str[count])
+			count++;
+		i++;
+		while (str[count] == c && str[count])
+			count++;
 	}
-	return (n);
+	return (i);
 }

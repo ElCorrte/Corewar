@@ -6,13 +6,13 @@
 /*   By: yzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/11 18:19:52 by yzakharc          #+#    #+#             */
-/*   Updated: 2017/10/11 18:19:56 by yzakharc         ###   ########.fr       */
+/*   Updated: 2017/10/26 11:36:35 by vpoltave         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../corewar.h"
 
-void	print_map(t_skrr *skrr)
+void			print_map(t_skrr *skrr)
 {
 	int line;
 
@@ -26,28 +26,43 @@ void	print_map(t_skrr *skrr)
 			ft_printf("\n%06#x : ", line += 64);
 		skrr->i++;
 	}
+	write(1, "\n", 1);
 }
 
-void	print_info(t_skrr *skrr, t_chmp *chmp)
+static void		ft_output(t_chmp *champ_tmp)
 {
-	skrr->i = 0;
-	skrr->n = 1;
-	(skrr->i == 0) ? ft_printf("Introducing contestants...\n") : 0;
-	while (chmp)
+	ft_printf("* Player %d, ", champ_tmp->id * (-1));
+	ft_printf("Name:" GRN" \"%s\""RESET, champ_tmp->header.prog_name);
+	ft_printf(", weighing" GRN" %u "RESET "bytes, ",
+			champ_tmp->header.prog_size);
+	ft_printf("comment:" GRN" \"%s\"\n"RESET,
+			champ_tmp->header.comment);
+}
+
+void			print_info(t_chmp *chmp)
+{
+	t_chmp	*champ_tmp;
+	int		cnt;
+	int		tmp;
+
+	cnt = -1;
+	champ_tmp = chmp;
+	ft_printf("Introducing contestants...\n");
+	while (champ_tmp)
 	{
-		ft_printf("* Player %d, ", skrr->n++);
-		ft_printf("Name:" GRN" \"%s\", "RESET, chmp->header.prog_name);
-		ft_printf("weighing" GRN" %u "RESET "bytes, ",
-				  chmp->header.prog_size);
-		ft_printf("comment:" GRN" \"%s\"\n"RESET,
-				  chmp->header.comment);
-		chmp = chmp->next;
-		skrr->i++;
+		tmp = cnt;
+		if (champ_tmp->id == cnt)
+		{
+			ft_output(champ_tmp);
+			cnt--;
+			champ_tmp = chmp;
+		}
+		tmp == cnt ? champ_tmp = champ_tmp->next : 0;
 	}
 }
 
-void	dump_print(t_skrr *skrr)
+void			dump_print(t_skrr *skrr)
 {
-	print_info(skrr, skrr->chmp);
 	print_map(skrr);
+	exit(0);
 }

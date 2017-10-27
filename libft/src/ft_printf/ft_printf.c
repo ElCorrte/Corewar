@@ -3,120 +3,112 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpoltave <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/19 15:41:42 by vpoltave          #+#    #+#             */
-/*   Updated: 2017/06/22 13:39:48 by vpoltave         ###   ########.fr       */
+/*   Created: 2017/04/14 15:22:34 by kzakharc          #+#    #+#             */
+/*   Updated: 2017/06/13 21:39:08 by kzakharc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <stdlib.h>
 
-int		ft_printf(const char *format, ...)
+void	check_tp(const char **r, va_list ap, t_uck *s)
 {
-	va_list ap;
-	t_eb	k;
-
-	k.outn = 0;
-	va_start(ap, format);
-	while (*format)
+	(**r == 'd' || **r == 'i') ? (print_d_i(ap, s, &(*r))) : 0;
+	(**r == 'D') ? (print_bd(ap, s, &(*r))) : 0;
+	(**r == 'u') ? (print_u(ap, s, &(*r))) : 0;
+	(**r == 'U') ? (print_bu(ap, s, &(*r))) : 0;
+	(**r == 'o') ? (print_o(ap, s, &(*r))) : 0;
+	(**r == 'O') ? (print_bo(ap, s, &(*r))) : 0;
+	((**r == 'c') && (s->l != 1)) ? (print_c(ap, s, &(*r))) : 0;
+	(((**r == 'c') && (s->l == 1)) || (**r == 'C')) ? (pr_bc(ap, s, &(*r))) : 0;
+	((**r == 's') && (s->l != 1)) ? (print_s(ap, s, &(*r))) : 0;
+	((**r == 'S') || ((**r == 's') && (s->l == 1))) ? (pr_bs(ap, s, &(*r))) : 0;
+	(**r == 'X') ? (print_bx(ap, s, &(*r))) : 0;
+	(**r == 'x') ? (print_x(ap, s, &(*r))) : 0;
+	(**r == 'n') ? (record_n(ap, s)) : 0;
+	(**r == 'b') ? (print_b(ap, s, &(*r))) : 0;
+	if ((**r == 'p') && (s->has = 1))
 	{
-		prep_clear(&k);
-		while ((*format != '%') && (*format))
+		s->l = 1;
+		if ((s->ze == 1) && (s->width == 1))
 		{
-			k.outn++;
-			ft_putchar(*format++);
+			if_hash(s, &(*r), 1);
+			if_hash(s, &(*r), 0);
 		}
-		if (*format == '%' && &(*format++))
-			ft_get(ap, &format, &k);
-		ft_strdel(&g_tmp);
-		*format ? format++ : 0;
+		print_x(ap, s, &(*r));
 	}
+	(*r)++;
+}
+
+void	check_flags(const char **r_form, t_uck *s)
+{
+	if (ft_strchr(s->f, **r_form))
+	{
+		check_flags_(r_form, s);
+		if (**r_form == 'h')
+		{
+			s->how++;
+			if (s->how % 2 != 0)
+				(s->h = 1);
+			else
+			{
+				s->hh = 1;
+				s->h = 0;
+			}
+		}
+		if (**r_form == 'l')
+		{
+			s->low++;
+			if (s->low % 2 != 0)
+				(s->l = 1);
+			else
+				s->ll = 1;
+		}
+		find_dominant(s);
+	}
+}
+
+void	lets_go(const char *r, va_list ap, t_uck *s)
+{
+	while (*r)
+	{
+		get_null(s);
+		while ((*r != '%') && (*r))
+		{
+			ft_putchar(*r);
+			s->count++;
+			(*r) ? (r++) : 0;
+		}
+		if (*r == '%')
+		{
+			r++;
+			while (ft_strchr(s->f, *r) && *r)
+			{
+				if ((*r >= 49 && *r <= 57) || (*r == '*'))
+					ch_w(&r, ap, s);
+				if (*r == '.')
+					ch_p(&r, ap, s);
+				check_flags(&r, s);
+				(ft_strchr(s->f, *r) && (*r != '*') && (*r != '.')) ? (r++) : 0;
+			}
+			if (*r)
+				ft_strchr(s->tp, *r) ? (check_tp(&r, ap, s)) : p_t(s, &r);
+		}
+	}
+}
+
+int		ft_printf(const char *r_form, ...)
+{
+	va_list	ap;
+	t_uck	s;
+
+	s.f = "#0-+ hljz.*123456789";
+	s.tp = "sSpdDioOuUxXcCnb";
+	s.count = 0;
+	va_start(ap, r_form);
+	lets_go(r_form, ap, &s);
 	va_end(ap);
-	return (k.outn);
-}
-
-void	ft_get(va_list ap, const char **format, t_eb *k)
-{
-	k->sp = "sSpdDioOuUxXcCn";
-	k->fl = "#0-+#.*123456789 hljz";
-	while (ft_strchr(k->fl, **format) && (**format))
-	{
-		if (ft_specdig(**format) || **format == '*')
-			fck_width(ap, format, k);
-		if (**format == '.')
-			fck_preco(ap, format, k);
-		found_flago(format, k);
-		((ft_strchr(k->fl, **format))) ? (*format)++ : 0;
-	}
-	ft_strchr(k->sp, **format) ? biggest_modifier(k, format) : 0;
-	if (ft_strchr(k->sp, **format) && (**format))
-		found_speco(format, ap, k);
-	else
-	{
-		k->space = 0;
-		k->dst = ft_strnew(1);
-		k->dst[0] = **format;
-		found_width(k, format, 0);
-		k->dst != NULL ? ft_strdel(&k->dst) : 0;
-	}
-}
-
-void	found_flago(const char **format, t_eb *k)
-{
-	(**format == '-') ? (k->minus = 1) : 0;
-	(**format == '+') ? (k->plus = 1) : 0;
-	(**format == ' ') ? (k->space = 1) : 0;
-	(**format == '#') ? (k->hash = 1) : 0;
-	(**format == '0') ? (k->zero = 1) : 0;
-	found_hhll(format, k);
-	(**format == 'j') ? (k->j = 1) : 0;
-	(**format == 'z') ? k->z = 1 : 0;
-}
-
-void	found_hhll(const char **format, t_eb *k)
-{
-	if (**format == 'h')
-	{
-		k->hcount++;
-		if (k->hcount % 2 != 0)
-			k->h = 1;
-		else
-		{
-			k->hh = 1;
-			k->h = 0;
-		}
-	}
-	if (**format == 'l')
-	{
-		k->lcount++;
-		if (k->lcount % 2 != 0)
-			k->l = 1;
-		else
-			k->ll = 1;
-	}
-}
-
-void	found_speco(const char **format, va_list ap, t_eb *k)
-{
-	((**format == 'd') || (**format == 'i')) ? ft_dec(ap, k, format) : 0;
-	((**format == 's') && (k->l != 1)) ? ft_string(ap, k, format) : 0;
-	((**format == 'S') || (**format == 's' && (k->l))) ?
-	ft_bigs(ap, k, format) : 0;
-	(**format == 'o') ? ft_ooctal(ap, k, format) : 0;
-	(**format == 'O') ? ft_looctal(ap, k, format) : 0;
-	(**format == 'x') ? ft_xhex(ap, k, format) : 0;
-	(**format == 'X') ? ft_xhex(ap, k, format) : 0;
-	(**format == 'u') ? ft_udec(ap, k, format) : 0;
-	(**format == 'U') ? ft_ludec(ap, k, format) : 0;
-	((**format == 'c') && (k->l != 1)) ? ft_char(ap, k, format) : 0;
-	(**format == 'C' || (**format == 'c' && k->l)) ? ft_char(ap, k, format) : 0;
-	(**format == 'D') ? ft_lddec(ap, k, format) : 0;
-	(**format == 'n') ? ft_n(ap, k) : 0;
-	if (**format == 'p')
-	{
-		k->hash = 1;
-		k->l = 1;
-		ft_xhex(ap, k, format);
-	}
+	return (s.count);
 }

@@ -3,32 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpoltave <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: yzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/15 22:21:50 by vpoltave          #+#    #+#             */
-/*   Updated: 2017/06/22 13:44:31 by vpoltave         ###   ########.fr       */
+/*   Created: 2017/03/03 10:30:13 by yzakharc          #+#    #+#             */
+/*   Updated: 2017/10/24 20:13:52 by kzakharc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef _GET_NEXT_LINE_H
+# define _GET_NEXT_LINE_H
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <fcntl.h>
 # include "../libft/libft.h"
 
 # define BUFF_SIZE 1
 
-typedef struct		s_bacon
+typedef struct		s_line
 {
+	char			*str;
 	int				fd;
-	char			*s;
-	struct s_bacon	*next;
-}					t_bacon;
+	struct s_line	*next;
+
+}					t_line;
 
 int					get_next_line(const int fd, char **line);
-void				where_is_n(char **s, char **line);
-int					where_is_smth(int fd, char **line, char **s, char *buff);
-char				**where_is_bacon(int fd, t_bacon **bacon);
 
 #endif

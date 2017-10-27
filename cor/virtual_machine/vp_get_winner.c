@@ -6,85 +6,60 @@
 /*   By: vpoltave <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/10 17:31:42 by vpoltave          #+#    #+#             */
-/*   Updated: 2017/09/10 17:31:43 by vpoltave         ###   ########.fr       */
+/*   Updated: 2017/10/26 11:34:23 by vpoltave         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../corewar.h"
 
-void	winner(t_proc *process, t_chmp *chmp, t_skrr *skrr)
+char	*name_winner(t_chmp *chmp, int id)
+{
+	t_chmp *tmp;
+
+	tmp = chmp;
+	while (tmp)
+	{
+		if (tmp->id == id)
+			return (ft_strdup(tmp->header.prog_name));
+		tmp = tmp->next;
+	}
+	g_cycles++;
+	return (0);
+}
+
+void	pt_winner(t_skrr *skrr, t_chmp *chmp, int best_player)
+{
+	char *name;
+
+	if (skrr->flag_v == 1)
+		printwinner(skrr, name = name_winner(chmp, best_player), best_player);
+	else
+		ft_printf("Contestant %d, " GRN"\"%s\""RESET ", has won !\n",
+				best_player * (-1), name = name_winner(chmp, best_player));
+	free(name);
+}
+
+void	winner(t_chmp *chmp, t_skrr *skrr, long best_cycle, int best_player)
 {
 	t_chmp	*chmp_tmp;
-	long 	*best_cycles;
-	int 	i;
 
-	i = 0;
 	chmp_tmp = chmp;
-	if (!(best_cycles = malloc(sizeof(long) * (chmp->id * (-1)))))
-		exit (0);
-	print_info(skrr, skrr->chmp);
-	if (chmp_tmp->id == -1)
-		ft_printf("Contestant %ld, " GRN"\"%s\", "RESET "has won !\n",
-				  chmp_tmp->id * (-1), chmp_tmp->header.prog_name);
-	else if (chmp_tmp->id != -1)
+	chmp_tmp->next != NULL ? chmp_tmp = chmp_tmp->next : 0;
+	while (chmp_tmp)
 	{
-		while (chmp_tmp)
+		if (best_cycle <= chmp_tmp->last_live)
 		{
-			best_cycles[i] = chmp_tmp->last_live;
-			chmp_tmp = chmp_tmp->next;
-			i++;
+			if (best_cycle == chmp_tmp->last_live)
+				best_player =
+					best_player < chmp_tmp->id ? chmp_tmp->id : best_player;
+			else
+			{
+				best_player = chmp_tmp->id;
+				best_cycle = chmp_tmp->last_live;
+			}
 		}
-	multipl_winners(process, skrr, best_cycles, i);
+		chmp_tmp = chmp_tmp->next;
 	}
-	if (skrr->flag_v == 1)
-		endwin();
+	pt_winner(skrr, chmp, best_player);
 	exit(1);
-}
-
-int 	multipl_winners(t_proc *process, t_skrr *skrr, long *best_cycles, int i)
-{
-	int j;
-	long best;
-
-	j = 0;
-	while (i != 0)
-	{
-		best = *best_cycles;
-		if (best < *best_cycles)
-		{
-			best = *best_cycles;
-		}
-		i--;
-		best_cycles++;
-	}
-
-//	ft_printf("Contestant %ld, " GRN"\"%s\", "RESET "has won !\n",
-// chmp_tmp->ac, chmp_tmp->header.prog_name);
-	return (1);
-}
-
-int 	init_lives(t_proc *process, t_skrr *skrr)
-{
-	t_proc *proc_tmp;
-
-	proc_tmp = process;
-	while (proc_tmp)
-	{
-		(proc_tmp->live_count > 0) ? proc_tmp->live_count = 0 : 0;
-		proc_tmp = proc_tmp->next;
-	}
-	if (skrr->nbr_live >= NBR_LIVE)
-	{
-		skrr->cycle_to_die -= CYCLE_DELTA;
-		skrr->max_checks = MAX_CHECKS;
-	}
-	else
-	{
-		skrr->max_checks--;
-		if (!skrr->max_checks ? skrr->max_checks = MAX_CHECKS : 0)
-			skrr->cycle_to_die -= CYCLE_DELTA;
-	}
-	skrr->nbr_live = 0;
-	g_ctd = 0;
-	return (1);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpoltave <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/01 12:23:13 by vpoltave          #+#    #+#             */
-/*   Updated: 2016/12/07 16:30:30 by vpoltave         ###   ########.fr       */
+/*   Created: 2016/12/06 16:33:19 by kzakharc          #+#    #+#             */
+/*   Updated: 2016/12/12 17:42:20 by kzakharc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,29 @@
 
 char	*ft_itoa(int n)
 {
-	char	*dst;
-	int		i;
+	char	*d;
+	int		count;
 	size_t	j;
 
-	j = ft_cntdigits(n);
-	if (!(dst = ft_strnew(j)))
+	j = ft_countdigits(n);
+	if (!(d = ft_strnew(j)))
 		return (NULL);
 	if (n == 0)
 	{
-		dst[0] = 48;
-		return (dst);
+		d[0] = 48;
+		return (d);
 	}
 	if (n < 0)
-		dst[0] = '-';
+		d[0] = '-';
 	while (j - 1 > 0)
 	{
-		i = n % 10;
-		if (i < 0)
-			i = -i;
-		dst[j-- - 1] = i + 48;
+		count = n % 10;
+		if (count < 0)
+			count = -count;
+		d[j-- - 1] = count + 48;
 		n /= 10;
 	}
 	if (n > 0)
-		dst[0] = n + 48;
-	return (dst);
+		d[0] = n + 48;
+	return (d);
 }

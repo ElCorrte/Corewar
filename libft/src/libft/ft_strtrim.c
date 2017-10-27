@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpoltave <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/29 12:20:50 by vpoltave          #+#    #+#             */
-/*   Updated: 2016/12/05 14:07:02 by vpoltave         ###   ########.fr       */
+/*   Created: 2016/12/03 20:21:11 by kzakharc          #+#    #+#             */
+/*   Updated: 2016/12/12 18:05:19 by kzakharc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,28 +15,28 @@
 char	*ft_strtrim(char const *s)
 {
 	size_t	i;
-	size_t	n;
+	size_t	count;
 	size_t	l;
-	char	*tmp;
+	char	*d;
 
-	i = 0;
+	count = 0;
 	l = 0;
-	if (s == NULL)
+	if (!(s))
 		return (NULL);
-	n = ft_strlen(s) - 1;
-	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
-		i++;
-	if ((i - 1) == n)
+	i = ft_strlen(s);
+	while (ft_isspace_s(s[count]) == 1)
+		count++;
+	if (count == i)
 	{
-		if (!(tmp = ft_strnew(0)))
+		if (!(d = ft_strnew(0)))
 			return (NULL);
-		return (tmp);
+		return (d);
 	}
-	while (s[n] == ' ' || s[n] == '\n' || s[n] == '\t')
-		n--;
-	l = n - i + 1;
-	if (!(tmp = ft_strnew(l)))
+	i = i - 1;
+	while (ft_isspace_s(s[i]) == 1)
+		i--;
+	if (!(d = ft_strnew(i - count + 1)))
 		return (NULL);
-	ft_strncpy(tmp, &s[i], l);
-	return (tmp);
+	ft_strncpy(d, &s[count], (i - count + 1));
+	return (d);
 }

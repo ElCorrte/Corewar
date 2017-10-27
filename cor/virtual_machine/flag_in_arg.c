@@ -6,48 +6,46 @@
 /*   By: yzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/14 11:11:09 by yzakharc          #+#    #+#             */
-/*   Updated: 2017/09/14 11:11:10 by yzakharc         ###   ########.fr       */
+/*   Updated: 2017/10/27 14:50:38 by yzakharc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../corewar.h"
 
-void			maybe_flag(char **av, int *i, t_skrr *skrr, int ac)
+int				maybe_flag(char **av, int *i, t_skrr *skrr, int ac)
 {
 	skrr->flag_n == NULL ? skrr->flag_n = ft_intmalloc(MAX_PLAYERS) : 0;
 	if (!ft_strcmp(av[*i], "-n"))
 	{
-		*i + 1 < ac ? skrr->flag_n[skrr->cnt_n] = ft_atoi(av[*i + 1]) : 0;
-		skrr->flag_n[skrr->cnt_n] != 0 ? (*i) += 2 : (*i)++;
-		return ;
+		n(av, i, skrr, ac);
+		skrr->cnt_n++;
+		return (0);
 	}
 	else if (!ft_strcmp(av[*i], "-v"))
 	{
 		skrr->flag_v = 1;
 		(*i)++;
-		return ;
+		return (1);
 	}
 	else if (!ft_strcmp(av[*i], "-dump"))
 	{
-		skrr->flag_dump = ft_atoi(av[*(i + 1)]);
-		(*i)++;
-		return ;
+		dump(av, i, skrr);
+		return (1);
 	}
 	else if (!ft_strcmp(av[*i], "-a"))
 	{
-		skrr->flag_a = 1;
-		(*i)++;
-		return ;
+		a(av, i, skrr);
+		return (1);
 	}
+	return (0);
 }
 
-void 			find_player(char **av, int *i, t_skrr *skrr)
+void			find_player(char **av, int *i, t_skrr *skrr)
 {
 	chk_open(skrr, av, *i, 1);
 	push_chmp(&skrr->chmp, skrr);
-	just_read(skrr, av[*i], *i, skrr->chmp);
+	just_read(skrr, av[*i], skrr->chmp);
 	skrr->max_player++;
-	skrr->cnt_n++;
 	skrr->chmp->ac = *i;
 	(*i)++;
 }
@@ -57,28 +55,29 @@ void			parsing_arg(t_skrr *skrr, char **av, int ac)
 	int i;
 
 	i = 1;
-	(REG_SIZE != 1) ? sizes_err("REG_SIZE", 1) : 0;
-	(DIR_SIZE != 2) ? sizes_err("DIR_SIZE", 2) : 0;
-	(IND_SIZE != 2) ? sizes_err("IND_SIZE", 3) : 0;
+	header_errors();
 	while (i < ac)
 	{
-		maybe_flag(av, &i, skrr, ac);
+		while (maybe_flag(av, &i, skrr, ac))
+			if (i == ac)
+			{
+				!ft_strcmp(av[(i - 1)], "-v") || !ft_strcmp(av[(i - 1)], "-a")
+					|| !ft_strcmp(av[(i - 2)], "-dump") ? 0 : usage_e();
+				break ;
+			}
 		if (i != ac)
 			find_player(av, &i, skrr);
 		else
 			break ;
 	}
+	i == ac && skrr->max_player == 0 ? usage_e() : 0;
 	skrr->max_player > MAX_PLAYERS ? chk_open(0, 0, 0, 0) : 0;
 	flag_n(skrr);
 	prog_commands(skrr, av, skrr->chmp);
-	if (skrr->flag_v == 1)
-	{
-		skrr->flag_a = 0;
-		skrr->flag_dump = 0;
-	}
+	init_flag(skrr);
 }
 
-unsigned int 	zero_reg(t_skrr *skrr)
+unsigned int	zero_reg(t_skrr *skrr)
 {
 	static int	nbr;
 	static int	tmp;
@@ -102,7 +101,7 @@ unsigned int 	zero_reg(t_skrr *skrr)
 	{
 		c = nbr;
 		nbr++;
-		return (unsigned int) (skrr->flag_n[c] * -1);
+		return ((unsigned int)(skrr->flag_n[c] * -1));
 	}
 }
 
@@ -114,10 +113,10 @@ void			flag_n(t_skrr *skrr)
 	i = 0;
 	skrr->init_id = 1;
 	tmp = skrr->process;
-	skrr->cnt_n > skrr->max_player ? chk_open(skrr, 0, 0, 5) : 0;
+	skrr->cnt_n > skrr->max_player ? argv_error(skrr, 0, 5) : 0;
 	while (i < skrr->max_player)
 	{
-		skrr->flag_n[i] < 0 || skrr->flag_n[i] > skrr->max_player ? chk_open(skrr, 0, 0, 4) : 0;
+		skrr->flag_n[i] > skrr->max_player ? argv_error(skrr, 0, 4) : 0;
 		while (tmp->id != skrr->init_id * (-1))
 			tmp = tmp->next;
 		tmp->registry[0] = zero_reg(skrr);
@@ -127,5 +126,7 @@ void			flag_n(t_skrr *skrr)
 	}
 	i = -1;
 	while (++i < skrr->max_player)
-		ft_intc(skrr->flag_n, skrr->flag_n[i], skrr->max_player) > 1 ? chk_open(skrr, 0, 0, 6) : 0;
+		ft_intc(skrr->flag_n, skrr->flag_n[i], skrr->max_player) > 1 ?
+		argv_error(skrr, 0, 6) : 0;
+	free(skrr->flag_n);
 }

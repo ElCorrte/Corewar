@@ -6,42 +6,47 @@
 #    By: vpoltave <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/16 12:41:59 by vpoltave          #+#    #+#              #
-#    Updated: 2017/10/12 19:08:02 by yzakharc         ###   ########.fr        #
+#    Updated: 2017/10/25 11:53:39 by vpoltave         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
-NAME	=	corewar
-CC		=	gcc
+COR		=	corewar
+ASM		=	asm
+CC		=	gcc -Wall -Wextra -Werror
 
 LIBFT	=	./libft/libft.a
 OBJ		:=	$(patsubst %.c,%.o,$(wildcard *.c))							\
-			$(patsubst %.c,%.o,$(wildcard ./cor/instructions/*.c))		\
 			$(patsubst %.c,%.o,$(wildcard ./cor/virtual_machine/*.c))	\
 			$(patsubst %.c,%.o,$(wildcard ./cor/visualisation/*.c))		\
+			$(patsubst %.c,%.o,$(wildcard ./cor/instructions/*.c))		\
+
+ASM_OBJ	:=	$(patsubst %.c,%.o,$(wildcard ./assembler/src/*.c))			\
+			$(patsubst %.c,%.o,$(wildcard *.c))                         \
 
 .PHONY: libft
 
-all: $(NAME)
+all: libft $(ASM) $(COR)
 
-$(NAME): $(OBJ) libft
-	@$(CC) -o $(NAME) $(OBJ) $(LIBFT) -lncurses
-	@echo "\033[32mcorewar compiled\033[0m"
+$(COR): $(OBJ)
+		$(CC) -o $(COR) $(OBJ) $(LIBFT) -lncurses
+
+$(ASM): $(ASM_OBJ)
+		$(CC) -o $(ASM) $(ASM_OBJ) $(LIBFT)
 
 libft:
 	@make -C ./libft
-	@echo "\033[32mlibft.a compiled\033[0m"
 
 %.o : %.c
-	@$(CC) -o $@ -c $<
+	$(CC) -o $@ -c $<
 
 clean:
-	@rm -rf $(OBJ)
-	@make clean -C ./libft
-	@echo "\033[32mclean completed\033[0m"
+	rm -rf $(OBJ)
+	rm -rf $(ASM_OBJ)
+	make clean -C ./libft
 
 fclean: clean
-	@rm -rf $(NAME)
-	@make fclean -C ./libft
-	@echo "\033[32mfclean completed\033[0m"
+	rm -rf $(COR)
+	rm -rf $(ASM)
+	make fclean -C ./libft
 
 re: fclean all

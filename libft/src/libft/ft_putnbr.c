@@ -3,35 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpoltave <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/07 17:19:45 by vpoltave          #+#    #+#             */
-/*   Updated: 2016/12/07 18:00:21 by vpoltave         ###   ########.fr       */
+/*   Created: 2016/11/30 18:35:31 by kzakharc          #+#    #+#             */
+/*   Updated: 2016/12/01 16:56:29 by kzakharc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putnbr(int n)
 {
-	if (n == -2147483648)
+	long int a;
+
+	a = n;
+	if (a < 0)
 	{
-		write(1, "-2147483648", 11);
-		return ;
-	}
-	if (n < 0)
-	{
+		a *= -1;
 		ft_putchar('-');
-		n *= -1;
 	}
-	else
-		(n *= 1);
-	if (n < 10)
-		ft_putchar(n + 48);
-	else
+	if (a > 9)
 	{
-		ft_putnbr(n / 10);
-		ft_putchar(n % 10 + 48);
+		ft_putnbr(a / 10);
 	}
+	ft_putchar(a % 10 + '0');
 }

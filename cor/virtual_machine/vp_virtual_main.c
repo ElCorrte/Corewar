@@ -12,27 +12,20 @@
 
 #include "../../corewar.h"
 
+unsigned long	g_cycles;
+int				g_ctd;
+int				g_err;
 
-//void exitfunc(int sig)
-//{
-//	endwin();
-//	ft_printf("%d\n", g_cycles);
-//	_exit(0);
-//}
-
-int 	main(int argc, char **argv)
+int				main(int argc, char **argv)
 {
 	t_skrr	skrr;
 
-//	signal(SIGALRM, exitfunc);
-//	alarm(10);
 	init(&skrr);
 	(argc == 1) ? usage_e() : 0;
 	parsing_arg(&skrr, argv, argc);
 	if (skrr.flag_v == 1)
 		visualize_init(&skrr);
 	entry_point(&skrr, skrr.chmp);
-//	print_info(&skrr, skrr.chmp);
 	close(skrr.fd) < 0 ? exit(0) : 0;
 	return (0);
 }

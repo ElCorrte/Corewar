@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpoltave <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kzakharc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/28 20:26:23 by vpoltave          #+#    #+#             */
-/*   Updated: 2016/12/02 16:48:58 by vpoltave         ###   ########.fr       */
+/*   Created: 2016/12/02 17:01:57 by kzakharc          #+#    #+#             */
+/*   Updated: 2016/12/02 17:10:05 by kzakharc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <stdlib.h>
+#include "libft.h"
 
 void	ft_strdel(char **as)
 {

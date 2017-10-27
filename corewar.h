@@ -22,5 +22,6 @@
 # include "op.h"
 # include "cor/virtual_machine/virtualm.h"
 # include "cor/visualisation/visualize.h"
+# include "assembler/includes/asm.h"
 
 #endif
